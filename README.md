@@ -18,8 +18,8 @@ babel-node arrow-functions.js
 
 ### Arrays
 
-* An array is of type 'object', console.log(typeof([])). Check it using Array.isArray().
-* Contrast that with the "array-like" arguments object of a regular function, which can be converted to an array with Array.from(arguments)
+* An array is of type 'object', but is printed as '[]' as opposed to '{}'. Check it using Array.isArray().
+* The 'arguments' object of a regular function is an 'array-like' object that prints '{}'. It is an iterable object that can be converted to an array with 'Array.from(arguments)'
 
 ```
 babel-node arrays.js
