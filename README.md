@@ -25,10 +25,11 @@ babel-node arrow-functions.js
 babel-node arrays.js
 ```
 
-### Use default params to change the 'arity' of a function for partial application (and function currying)
+### Functions
 
-* Use Function.prototype.bind to define default leading params (es5)
-* Use default trailing parameters (es6)
+* Use default params to change the 'arity' of a function for partial application (and function currying)
+   * Use Function.prototype.bind to define default leading params (es5)
+   * Use default trailing parameters (es6)
 
 ```
 babel-node bind.js
