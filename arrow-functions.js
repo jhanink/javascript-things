@@ -3,7 +3,7 @@ console.log("Arrow Functions");
 console.log("----------------------------------------");
 
 console.log();
-console.log("1. regular method of an object ");
+console.log("a. regular method of an object ");
 
 // regular method
 let p = { 
@@ -15,7 +15,7 @@ let p = {
 console.log("  p.outer()", p.outer()) // p object
 
 console.log();
-console.log("2. arrow function of an object ");
+console.log("b. arrow function of an object ");
 
 // arrow
 p = { 
@@ -23,8 +23,18 @@ p = {
 }
  
 
-console.log("  p.outer()", p.outer()) // undefined in strict mode
+console.log("  p.outer()", p.outer()) // undefined
 console.log("  p.outer.bind(p)", p.outer.bind(p)()) // still undefined
+
+
+console.log();
+console.log("c. arrow function 'arguments'");
+
+p = {
+  outer: (a,b) => arguments.length
+}
+
+console.log("  p.outer()", p.outer()) // undefined
 
 
 console.log();

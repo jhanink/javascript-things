@@ -1,0 +1,27 @@
+{
+  "name": "things-i-didnt-know-about-javascript",
+  "version": "1.0.0",
+  "description": "1. Arrow functions inherit 'this' from the enclosing context, also known as 'lexical' or 'static' context. The 'this' reference is not dynamically determined and is not observed when supplied from a bind, call, or apply method.",
+  "main": "arrow-functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhanink/things-i-didnt-know-about-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhanink/things-i-didnt-know-about-javascript/issues"
+  },
+  "homepage": "https://github.com/jhanink/things-i-didnt-know-about-javascript#readme",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-plugin-check-es2015-constants": "^6.3.13",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.3.13",
+    "babel-plugin-transform-es2015-block-scoping": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-2": "^6.3.13"
+  }
+}
