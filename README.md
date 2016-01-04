@@ -9,7 +9,7 @@ npm link babel-cli
 
 1. Arrow functions inherit 'this' from the enclosing context, also known as 'lexical' or 'static' context. The 'this' reference is not dynamically determined and is not observed when supplied from a bind, call, or apply method.
 
-2. Arrow functions do not get their own 'arguments'. A reference to arguments would come from the enclosing scope.
+2. Arrow functions do not get their own 'arguments' object.
 
 3. Since arrow functions don't get a proper 'arguments', use a 'rest' parameter instead
 
