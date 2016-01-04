@@ -21,7 +21,8 @@ babel-node arrow-functions.js
 * An array is of type 'object', but is printed as '[]' as opposed to '{}'. Check if an object is an array using Array.isArray(obj).
 * The 'arguments' object of a regular function is an 'array-like' object that prints '{}'. 
    * It can be converted to an array with 'Array.from(arguments)' (es6)
-   * Another way is to use '[].slice.call(arguments)' (es5)
+   * 'Array.slice(arguments,0)' (es5) also works but is not recommended
+      * (via MDN) "You should not slice on arguments because it prevents optimizations in JavaScript engines (V8 for example)"
 * An array-like object is an iterable object; e.g. { '0': 10, '1': 20 } and has a .length property
 * Array prototype methods may alter or create. 'shift' alters, whereas 'slice' creates.
    * some methods that return a new array
