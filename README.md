@@ -16,3 +16,13 @@ npm link babel-cli
 ```
 babel-node arrow-functions.js
 ```
+
+
+### Arrays
+
+1. An array is of type 'object', console.log(typeof([])). Check it using Array.isArray().
+2. Contrast that with the "array-like" arguments object of a regular function, which can be converted to an array with Array.from(arguments)
+
+```
+babel-node arrays.js
+```
