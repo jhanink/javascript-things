@@ -18,9 +18,11 @@ babel-node arrow-functions.js
 
 ### Arrays
 
-* An array is of type 'object', but is printed as '[]' as opposed to '{}'. Check it using Array.isArray().
-* The 'arguments' object of a regular function is an 'array-like' object that prints '{}'. It is an iterable object that can be converted to an array with 'Array.from(arguments)'
-* An array-like object is an iterable object; e.g. { '0': 1, '1': 2 } and has a .length property
+* An array is of type 'object', but is printed as '[]' as opposed to '{}'. Check if an object is an array using Array.isArray(obj).
+* The 'arguments' object of a regular function is an 'array-like' object that prints '{}'. 
+   * It can be converted to an array with 'Array.from(arguments)' (es6)
+   * Another way is to use '[].slice.call(arguments)' (es5)
+* An array-like object is an iterable object; e.g. { '0': 10, '1': 20 } and has a .length property
 * Array prototype methods may alter or create. 'shift' alters, whereas 'slice' creates.
    * some methods that return a new array
       * .concat
