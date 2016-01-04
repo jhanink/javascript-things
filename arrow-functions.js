@@ -1,8 +1,3 @@
-console.log("----------------------------------------");
-console.log("Arrow Functions");
-console.log("----------------------------------------");
-
-console.log();
 console.log("a. regular method of an object ");
 
 // regular method
