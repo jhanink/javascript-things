@@ -61,3 +61,15 @@ babel-node arrays.js
 ```
 babel-node functions.js
 ```
+
+### Concepts
+
+* Exemplar Prototypes
+   * Used to clone for what is called "Concatenative Inheritance" instead of classes
+
+### Git Projects
+
+* VerbalExpressions
+   * Use common language expressions to compose RegEx
+   * https://github.com/VerbalExpressions/JSVerbalExpressions
+
