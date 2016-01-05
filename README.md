@@ -1,4 +1,4 @@
-# Things I didn't know about javascript
+# Javascript things I didn't know (well)
 
 ```
 npm install
