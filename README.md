@@ -23,7 +23,7 @@ npm link babel-cli
    * `let f = () => ({ a: 1});` // without parens, it's just a function block without a return statement and returns undefined.
 
 ```
-babel-node arrow-functions.js
+babel-node code/arrow-functions.js
 ```
 
 
@@ -49,7 +49,7 @@ babel-node arrow-functions.js
       * .sort - returns undefined
 
 ```
-babel-node arrays.js
+babel-node code/arrays.js
 ```
 
 ### Functions
@@ -59,7 +59,7 @@ babel-node arrays.js
    * Use default trailing parameters (es6)
 
 ```
-babel-node functions.js
+babel-node code/functions.js
 ```
 
 ### Concepts
@@ -77,7 +77,7 @@ babel-node functions.js
    * Allows for "selective" or "concatenative" inheritance, composed from many objects
 * Memoization
    * An optimization technique that saves calculated results and returns cached values for repeated access
-   * Example: TwoSums
+   * Example: `code/two-sum.js`
       * Given an array of integers, find two numbers such that they add up to a specific target number
       * Avoid the O(n^2) nested loop
       * Use a single pass O(n) loop storing candidates in a map by key `value2 = target - value1` for lookup matching of subsequent entries
