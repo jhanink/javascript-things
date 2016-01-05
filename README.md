@@ -15,7 +15,8 @@ npm link babel-cli
 
 * Arrow functions inherit 'this' from the enclosing context, also known as 'lexical' or 'static' context. The 'this' reference is not dynamically determined and is not observed when supplied from a bind, call, or apply method.
 * Arrow functions do not get their own 'arguments' object.
-* Since arrow functions don't get a proper 'arguments', use a 'rest' parameter instead
+* Since arrow functions don't get a proper 'arguments', use a 'rest' parameter instead.
+   * Note that arrays and 'rest' objects can be used to 'spread' out as parameters to another function invocation.
 
 ```
 babel-node arrow-functions.js
@@ -54,5 +55,5 @@ babel-node arrays.js
    * Use default trailing parameters (es6)
 
 ```
-babel-node bind.js
+babel-node functions.js
 ```
