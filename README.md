@@ -17,6 +17,8 @@ npm link babel-cli
 * Arrow functions do not get their own 'arguments' object.
 * Since arrow functions don't get a proper 'arguments', use a 'rest' parameter instead.
    * Note that arrays and 'rest' objects can be used to 'spread' out as parameters to another function invocation.
+* Use parentheses to return an object literal when using concise syntax
+   * `let f = () => ({ a: 1});` // without parens, it's just an empty function block that returns undefined.
 
 ```
 babel-node arrow-functions.js
