@@ -66,6 +66,9 @@ babel-node functions.js
 
 * Exemplar Prototypes
    * Used to clone an object as a means of "Concatenative Inheritance" instead of using classes
+* Pure Functions
+   * Idempotent
+   * Free of side effects
 
 ### Git Projects
 
