@@ -72,7 +72,7 @@ babel-node code/functions.js
    * Encourages immutability and loose coupling
 * Prototypal Inheritance
    * Instances inherit directly from other objects
-   * Allows for "selective" or "concatenative" inheritance, composed from many objects
+   * Allows for "selective" or "concatenative" inheritance (mixin composition from many objects)
 * Memoization
    * An optimization technique that saves calculated results and returns cached values for repeated access
    * Example: `code/two-sum.js`
