@@ -80,7 +80,7 @@ babel-node code/functions.js
       * Avoid the O(n^2) nested loop
       * Use a single pass O(n) loop storing candidates in a map by key `value2 = target - value1` for lookup matching of subsequent entries
 
-### (Amazing) Git Projects
+### (Amazing) Git projects
 
 * [VerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions) - Use common language expressions to compose RegEx
 
