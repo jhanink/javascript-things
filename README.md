@@ -68,8 +68,7 @@ babel-node code/functions.js
    * Used for flexible cloning as a means of "concatenative inheritance" instead of rigid class libraries
 * Functional Programming
    * Pure functions 
-      * Idempotent
-      * Free of side effects by avoiding shared and mutable data
+      * Idempotent & free of side effects by avoiding shared/mutable data
    * First class functions
    * Higher order functions 
    * Avoids inflexible class hierarchies
