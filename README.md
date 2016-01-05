@@ -52,7 +52,7 @@ babel-node code/arrays.js
 ### Functions
 
 * Use default params to change the 'arity' of a function for partial application (and function currying)
-   * Use Function.prototype.bind to define default leading params (es5)
+   * Use `Function.prototype.bind` to define default leading params (es5)
    * Use default trailing parameters (es6)
 
 ```
