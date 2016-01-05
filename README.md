@@ -65,7 +65,7 @@ babel-node code/functions.js
 ### Concepts
 
 * Exemplar Prototypes
-   * Used to clone an object as a means of "Concatenative Inheritance" instead of using classes
+   * Used for flexible cloning as a means of "concatenative inheritance" instead of rigid class libraries
 * Functional Programming
    * Pure functions 
       * Idempotent
