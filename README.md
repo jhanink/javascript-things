@@ -65,7 +65,7 @@ babel-node functions.js
 ### Concepts
 
 * Exemplar Prototypes
-   * Used to clone for what is called "Concatenative Inheritance" instead of classes
+   * Used to clone an object as a means of "Concatenative Inheritance" instead of using classes
 
 ### Git Projects
 
