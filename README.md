@@ -71,8 +71,10 @@ babel-node code/functions.js
    * Avoids inflexible class hierarchies
    * Encourages immutability and loose coupling
 * Prototypal Inheritance
+   * Favors delegation/composition over class inheritance
    * Instances inherit directly from other objects
-   * Allows for "selective" or "concatenative" inheritance (mixin composition from many objects)
+   * Supports "selective" or "concatenative" inheritance (mixin composition from many objects)
+      * see [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 * Memoization
    * An optimization technique that saves calculated results and returns cached values for repeated access
    * Example: `code/two-sum.js`
