@@ -2,9 +2,11 @@
 
 It's impossible to remember everything, and it's hard to remember everything that's important. Maintaining a list of 'everything' isn't very useful, since that's what google, mdn, and stackoverflow are for. 
 
-But I do want to remember some things. How about those things that I recently learned.
+But I do want to remember some things. How about those things that I recently learned and rather not forget.
 
-This list will be different for everyone and will change over time, but it's useful to keep track of fresh items and encourages detailed attention and continuous learning.
+This list will be different for everyone and will change over time, but it's useful to keep track of fresh items and encourages detailed attention and further learning.
+
+Having something to share and compare ain't bad either.
 
 ```
 npm install
@@ -27,7 +29,7 @@ babel-node arrow-functions.js
 
 ### Arrays
 
-* An array is of type 'object', but is printed as '[]' as opposed to '{}'. Check if an object is an array using `Array.isArray(obj)`.
+* An array is of type 'object' but is printed as '[]' as opposed to '{}'. Check if an object is an array using `Array.isArray(obj)`.
 * The 'arguments' object of a regular function is an 'array-like' object that prints '{}'. 
    * It can be converted to an array with `Array.from(arguments)` (es6)
    * `Array.slice(arguments,0)` (es5) also works but is not recommended
