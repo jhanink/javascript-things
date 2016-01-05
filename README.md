@@ -69,7 +69,6 @@ babel-node functions.js
 
 ### Git Projects
 
-* VerbalExpressions
+* [VerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)
    * Use common language expressions to compose RegEx
-   * https://github.com/VerbalExpressions/JSVerbalExpressions
 
