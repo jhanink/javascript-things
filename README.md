@@ -13,7 +13,7 @@ npm install
 npm link babel-cli
 ```
 
-## `arrow functions`
+### `arrow functions`
 
 * Arrow functions inherit 'this' from the enclosing context, also known as 'lexical' or 'static' context. The 'this' reference is not dynamically determined and is not observed when supplied from a bind, call, or apply method.
 * Arrow functions do not get their own 'arguments' object.
@@ -27,7 +27,7 @@ babel-node code/arrow-functions.js
 ```
 
 
-## `arrays`
+### `arrays`
 
 * An array is of type 'object' but is printed as '[]' as opposed to '{}'. Check if an object is an array using `Array.isArray(obj)`.
 * The 'arguments' object of a regular function is an 'array-like' object that prints '{}'. 
@@ -49,7 +49,7 @@ babel-node code/arrow-functions.js
 babel-node code/arrays.js
 ```
 
-## `functions`
+### `functions`
 
 * Use default params to change the 'arity' of a function for partial application (and function currying)
    * Use `Function.prototype.bind` to define default leading params (es5)
@@ -59,7 +59,7 @@ babel-node code/arrays.js
 babel-node code/functions.js
 ```
 
-## `js concepts`
+### `js concepts`
 
 * *Exemplar Prototypes*
    * Used for flexible cloning as a means of "concatenative inheritance" instead of rigid class libraries
@@ -74,7 +74,7 @@ babel-node code/functions.js
    * Supports "selective" or "concatenative" inheritance (mixin composition from many objects)
       * see [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 
-## `general concepts`
+### `general concepts`
 
 * *Memoization*
    * An optimization technique that saves calculated results in a lookup table for repeated access
@@ -83,15 +83,15 @@ babel-node code/functions.js
       * Avoid the O(n^2) nested loop
       * Use a single pass O(n) loop storing candidates in a map by key `value2 = target - value1` for lookup matching of subsequent entries
 
-## `amazing git projects`
+### `amazing git projects`
 
 * [VerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions) - Use common language expressions to compose RegEx
 
-## `awesome articles`
+##3 `awesome articles`
 
 * [10 Interview Questions Every Javascript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95#.24qhy21h7) - by Eric Elliott
 
-## `misc fun random`
+### `misc fun random`
 
 * *Cognates* - words that have the same etymological origin (from Latin `cognatus`, meaning `blood relative`)
    * Example - `memoize` & `memorize` 
