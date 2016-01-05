@@ -74,7 +74,7 @@ babel-node code/functions.js
    * Supports "selective" or "concatenative" inheritance (mixin composition from many objects)
       * see [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 * Memoization
-   * An optimization technique that saves calculated results and returns cached values for repeated access
+   * An optimization technique that saves calculated results in a lookup table for repeated access
    * Example: `code/two-sum.js`
       * Given an array of integers, find two numbers such that they add up to a specific target number
       * Avoid the O(n^2) nested loop
