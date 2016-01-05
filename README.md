@@ -64,12 +64,10 @@ babel-node code/functions.js
 * Exemplar Prototypes
    * Used for flexible cloning as a means of "concatenative inheritance" instead of rigid class libraries
 * Functional Programming
-   * Pure functions 
-      * Idempotent & free of side effects by avoiding shared/mutable data
-   * First class functions - functions are first class citizens and can be passed around
+   * Pure functions - idempotent, free of side effects, avoids shared/mutable data
+   * First class functions - first class citizens and can be passed around
    * Higher order functions - functions that take or return other functions
-   * Avoids inflexible class hierarchies
-   * Encourages immutability and loose coupling
+   * Encourages immutability and loose coupling; avoids inflexible class hierarchies
 * Prototypal Inheritance
    * Favors delegation/composition over class inheritance
    * Instances inherit directly from other objects
