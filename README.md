@@ -66,8 +66,8 @@ babel-node code/functions.js
 * Functional Programming
    * Pure functions 
       * Idempotent & free of side effects by avoiding shared/mutable data
-   * First class functions
-   * Higher order functions 
+   * First class functions - functions are first class citizens and can be passed around
+   * Higher order functions - functions that take or return other functions
    * Avoids inflexible class hierarchies
    * Encourages immutability and loose coupling
 * Prototypal Inheritance
