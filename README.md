@@ -72,6 +72,8 @@ babel-node code/functions.js
       * Free of side effects by avoiding shared and mutable data
    * First class functions
    * Higher order functions 
+   * Avoids inflexible class hierarchies
+   * Encourages immutability and loose coupling
 * Prototypal Inheritance
    * Instances inherit directly from other objects
    * Allows for "selective" or "concatenative" inheritance, composed from many objects
