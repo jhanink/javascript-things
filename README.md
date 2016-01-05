@@ -69,7 +69,7 @@ babel-node functions.js
 * Functional Programming
    * Pure functions 
       * Idempotent
-      * Free of side effects
+      * Free of side effects by avoiding shared and mutable data
    * First class functions
    * Higher order functions 
 
