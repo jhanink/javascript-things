@@ -59,21 +59,24 @@ babel-node code/arrays.js
 babel-node code/functions.js
 ```
 
-### Concepts
+### (JS) Concepts
 
-* Exemplar Prototypes
+* *Exemplar Prototypes*
    * Used for flexible cloning as a means of "concatenative inheritance" instead of rigid class libraries
-* Functional Programming
+* *Functional Programming*
    * Pure functions - idempotent, free of side effects, avoids shared/mutable data
    * First class functions - first class citizens and can be passed around
    * Higher order functions - functions that take or return other functions
    * Encourages immutability and loose coupling; avoids inflexible class hierarchies
-* Prototypal Inheritance
+* *Prototypal Inheritance*
    * Favors delegation/composition over class inheritance
    * Instances inherit directly from other objects
    * Supports "selective" or "concatenative" inheritance (mixin composition from many objects)
       * see [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
-* Memoization
+
+### (Programming) Concepts
+
+* *Memoization*
    * An optimization technique that saves calculated results in a lookup table for repeated access
    * Example: `code/two-sum.js`
       * Given an array of integers, find two numbers such that they add up to a specific target number
@@ -90,7 +93,7 @@ babel-node code/functions.js
 
 ### (Random) Miscellaneous
 
-* Cognates - words that have the same etymological origin (from `cognatus`, blood relative)
+* *Cognates* - words that have the same etymological origin (from Latin `cognatus`, meaning `blood relative`)
    * Example - `memoize` & `memorize` 
 
 
