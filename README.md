@@ -72,6 +72,15 @@ babel-node functions.js
       * Free of side effects by avoiding shared and mutable data
    * First class functions
    * Higher order functions 
+* Prototypal Inheritance
+   * Instances inherit directly from other objects
+   * Allows for "selective" or "concatenative" inheritance, composed from many objects
+* Memoization
+   * An optimization technique that saves calculated results and returns cached values for repeated access
+   * Example: TwoSums
+      * Given an array of integers, find two numbers such that they add up to a specific target number
+      * Avoid the O(n^2) nested loop
+      * Use a single pass O(n) loop storing candidates in a map by key `value2 = target - value1` for lookup matching of subsequent entries
 
 ### Git Projects
 
