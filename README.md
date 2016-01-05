@@ -59,7 +59,7 @@ babel-node code/arrays.js
 babel-node code/functions.js
 ```
 
-### (JS) Concepts
+### `js` Concepts
 
 * *Exemplar Prototypes*
    * Used for flexible cloning as a means of "concatenative inheritance" instead of rigid class libraries
@@ -74,7 +74,7 @@ babel-node code/functions.js
    * Supports "selective" or "concatenative" inheritance (mixin composition from many objects)
       * see [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 
-### (Programming) Concepts
+### `general` Concepts
 
 * *Memoization*
    * An optimization technique that saves calculated results in a lookup table for repeated access
@@ -83,15 +83,15 @@ babel-node code/functions.js
       * Avoid the O(n^2) nested loop
       * Use a single pass O(n) loop storing candidates in a map by key `value2 = target - value1` for lookup matching of subsequent entries
 
-### (Amazing) Git projects
+### `amazing` Git projects
 
 * [VerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions) - Use common language expressions to compose RegEx
 
-### (Awesome) Articles
+### `awesome` Articles
 
 * [10 Interview Questions Every Javascript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95#.24qhy21h7) - by Eric Elliott
 
-### (Random) Miscellaneous
+### `misc fun` Random 
 
 * *Cognates* - words that have the same etymological origin (from Latin `cognatus`, meaning `blood relative`)
    * Example - `memoize` & `memorize` 
