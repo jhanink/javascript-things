@@ -1,4 +1,10 @@
-# Javascript things I didn't know (well)
+# Javascript things I didn't know
+
+It's impossible to remember everything, and it's hard to remember everything that's important. Maintaining a list of 'everything' isn't very useful, since that's what google, mdn, and stackoverflow are for. 
+
+But I do want to remember some things. How about those things that recently learned.
+
+This list will be different for everyone and will change over time, but it's useful to keep track of fresh items and encourages detailed attention and continuous learning.
 
 ```
 npm install
@@ -34,7 +40,7 @@ babel-node arrow-functions.js
       * .shift - returns the removed (head) element
       * .unshift - returns the new length of the array
       * .splice - returns the removed elements (in an array)
-      * .reverse - returns undefined 
+      * .reverse - returns undefined
       * .sort - returns undefined
 
 ```
