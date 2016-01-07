@@ -60,6 +60,11 @@ babel-node code/arrays.js
 babel-node code/functions.js
 ```
 
+## `browsers`
+
+* IE
+  * circular references aren't garbage collected in IE, leading to memory leaks
+
 ## `js concepts`
 
 * *Exemplar Prototypes*
