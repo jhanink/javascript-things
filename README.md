@@ -95,6 +95,7 @@ babel-node code/functions.js
 
 ## `amazing git projects`
 
+* [es6 features](https://github.com/lukehoban/es6features)
 * [VerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions) - Use common language expressions to compose RegEx
 
 ## `awesome articles`
