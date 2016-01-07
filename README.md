@@ -66,8 +66,9 @@ babel-node code/functions.js
 
 ## `browsers`
 
-* IE
-  * circular references aren't garbage collected in IE, leading to memory leaks
+* circular references aren't garbage collected in IE, leading to memory leaks
+* use polyfills to support older browsers
+* use transpilers (e.g. babel) to compile down to vanilla js
 
 ## `js concepts`
 
