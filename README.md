@@ -94,6 +94,13 @@ babel-node code/functions.js
       * Avoid the O(n^2) nested loop
       * Use a single pass O(n) loop storing candidates in a map by key `value2 = target - value1` for lookup matching of subsequent entries
 
+* *Virtual DOM*
+   * Memory structure for staging DOM changes
+   * Performs an efficient before/after diff (a.k.a 'reconciliation' in React)
+      * Minimizes expensive DOM updates and thus reduces browser DOM reflow churn
+   * Utilizes synthetic events to allow event listeners to run without incurring the cost of browser event propagation
+   * Conceptually similar to double-buffering in game programming 
+
 ## `amazing git projects`
 
 * [es6 features](https://github.com/lukehoban/es6features)
