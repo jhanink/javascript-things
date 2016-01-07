@@ -60,6 +60,10 @@ babel-node code/arrays.js
 babel-node code/functions.js
 ```
 
+## `code examples`
+
+* flatten an array using recursive reduce `babel-node code/reduce.js`
+
 ## `browsers`
 
 * IE
