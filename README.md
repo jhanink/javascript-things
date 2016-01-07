@@ -93,7 +93,6 @@ babel-node code/functions.js
       * Given an array of integers, find two numbers such that they add up to a specific target number
       * Avoid the O(n^2) nested loop
       * Use a single pass O(n) loop storing candidates in a map by key `value2 = target - value1` for lookup matching of subsequent entries
-
 * *Virtual DOM*
    * Memory structure for staging DOM changes
    * Performs an efficient before/after diff (a.k.a 'reconciliation' in React)
