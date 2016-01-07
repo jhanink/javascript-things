@@ -1,4 +1,4 @@
-# Javascript things I didn't know
+# Javascript Things
 
 It's impossible to remember everything, and it's hard to remember everything that's important. Maintaining a list of 'everything' isn't very useful, since that's what google, mdn, and stackoverflow are for. 
 
