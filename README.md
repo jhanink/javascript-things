@@ -84,7 +84,7 @@ babel-node code/functions.js
    * Encourages immutability and loose coupling; avoids inflexible class hierarchies
 * *Prototypal Inheritance*
    * Favors delegation/composition over class inheritance
-   * Instances inherit directly from other objects
+   * Instances inherit directly from other objects (OLOO - objects linked to other objects)
    * Supports "selective" or "concatenative" inheritance (mixin composition from many objects)
       * see [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 
