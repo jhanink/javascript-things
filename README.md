@@ -65,6 +65,7 @@ babel-node code/functions.js
 ## `code examples`
 
 * flatten an array using recursive reduce `babel-node code/reduce.js`
+* find two numbers in an array that sum up to an input value `babel-node code/two-sum.js`
 
 ## `browsers`
 
