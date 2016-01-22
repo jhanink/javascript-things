@@ -2,7 +2,7 @@
 
 It's impossible to remember everything, and it's hard to remember everything that's important. Maintaining a list of 'everything' isn't very useful, since that's what google, mdn, and stackoverflow are for. 
 
-But I do want to remember some things. How about those things that I recently learned and rather not forget.
+But I do want to remember some things. 
 
 This list will be different for everyone and will change over time, but it's useful to keep track of fresh items and encourages detailed attention and further learning.
 
