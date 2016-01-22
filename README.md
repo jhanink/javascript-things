@@ -71,7 +71,11 @@ babel-node code/functions.js
 
 * circular references aren't garbage collected in IE, leading to memory leaks
 * use polyfills to support older browsers
-* use transpilers (e.g. babel) to compile down to vanilla js
+* use transpilers (e.g. babel) to compile es6 down to vanilla js
+
+## `misc`
+
+* use event delegation, e.g. `$(document).on( "click", "#selector", function() {});`
 
 ## `js concepts`
 
