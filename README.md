@@ -45,8 +45,8 @@ babel-node code/arrow-functions.js
       * `.shift()` - returns the removed (head) element
       * `.unshift()` - returns the new length of the array
       * `.splice()` - returns the removed elements (in an array)
-      * `.reverse()` - returns undefined
-      * `.sort()` - returns undefined
+      * `.reverse()` - returns `undefined`
+      * `.sort()` - returns `undefined`
 
 ```
 babel-node code/arrays.js
