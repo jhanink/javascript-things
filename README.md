@@ -109,10 +109,11 @@ babel-node code/functions.js
 * [es6 equivalents in es5](https://github.com/addyosmani/es6-equivalents-in-es5)
 * [VerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions) - Use common language expressions to compose RegEx
 
-## `awesome articles`
+## `useful articles`
 
 * [10 Interview Questions Every Javascript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95#.24qhy21h7) - by Eric Elliott
 * [The javascript job market](https://medium.com/javascript-scene/forget-the-click-bait-here-s-what-the-javascript-job-market-really-looks-like-in-2016-ddfe0d39b467#.qayjac9w2)
+* [The es6 conundrum](http://www.sitepoint.com/the-es6-conundrum/)
 
 ## `misc fun random`
 
