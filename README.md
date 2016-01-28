@@ -22,7 +22,7 @@ npm link babel-cli
 * Since arrow functions don't get a proper '`arguments`', use a 'rest' parameter instead.
    * Note that arrays and 'rest' objects can be used to 'spread' out as parameters to another function invocation.
 * Use parentheses to return an object literal when using concise syntax
-   * `let f = () => ({ a: 1});` // without parens, it's just a function block without a return statement and returns undefined.
+   * `let f = () => ({ a: 1});` // without parens, it's just a function block without a return statement and returns `undefined`.
 
 ```
 babel-node code/arrow-functions.js
@@ -33,7 +33,7 @@ babel-node code/arrow-functions.js
 
 * An array is of type '`object`' but is printed as '[]' as opposed to '{}'. Check if an object is an array using `Array.isArray(obj)`.
 * The '`arguments`' object of a regular function is an 'array-like' object that prints '{}'. 
-   * It can be converted to an array with `Array.from(arguments)` (es6)
+   * It can be converted to a proper array with `Array.from(arguments)` (es6)
    * `Array.slice(arguments,0)` (es5) also works but is not recommended
       * (via MDN) "You should not slice on arguments because it prevents optimizations in JavaScript engines (V8 for example)"
 * An array-like object is an iterable object; e.g. `{ '0': 10, '1': 20 }` and has a `.length` property
