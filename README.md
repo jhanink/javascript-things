@@ -107,7 +107,7 @@ babel-node code/functions.js
    * Utilizes synthetic events to allow event listeners to run without incurring the cost of browser event propagation
    * Conceptually similar to double-buffering in game programming 
 
-## `amazing git projects`
+## `great git projects`
 
 * [es6 features](https://github.com/lukehoban/es6features)
 * [es6 equivalents in es5](https://github.com/addyosmani/es6-equivalents-in-es5)
@@ -115,6 +115,7 @@ babel-node code/functions.js
 * [front end developer questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions) - 20k github stars!
 * [most starred github projects](https://github.com/search?q=stars:%3E1&s=stars&type=Repositories)
 * [javascript framework resources](https://github.com/vhf/free-programming-books/blob/master/javascript-frameworks-resources.md) - 50k github stars
+* [postman commandline](https://github.com/postmanlabs/newman/)
 
 ## `useful articles, sites`
 
@@ -127,5 +128,4 @@ babel-node code/functions.js
 
 * *Cognates* - words that have the same etymological origin (from Latin `cognatus`, meaning `blood relative`)
    * Example - `memoize` & `memorize` 
-
 
