@@ -37,8 +37,10 @@ npm link babel-cli
       * `null instanceof Object // false`
       * `null === null // true`
    * `undefined` is a special case
-      * a "primitive value that has the formal type of `undefined`
-      * it is not
+      * a "primitive" value that has the formal type of `undefined`
+      * it is not an object
+      * `typeof(undefined) === 'undefined' // true`
+      * `undefined instanceof Object // false`
    * `function` is a special case
       * a function is a regular object with the additional capability of being `callable`
       * `typeof (function(){}) === 'function'` - a function literal of type `function`
