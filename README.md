@@ -18,9 +18,6 @@ npm link babel-cli
 
 ## `javascript types`
 
-javascript has a (large) standard library of built-in objects 
-see [Standard built-in objects]()
-
 * built-in data types (as returned from `typeof`)
    * `string`, `number`, `boolean`, `null`, `undefined`, `object`, (`function`)
    * `string` is a special case
@@ -68,9 +65,7 @@ see [Standard built-in objects]()
 
 * built-in objects (provide the prototype for other objects)
 
-javascript has a (large) standard library of built-in objects 
-
-see [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+javascript has a (large) standard library of built-in objects. See [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 
    * String, Number, Boolean
       * these provide the prototype for "instance wrappers" around the associated primitive types
