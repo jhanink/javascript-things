@@ -18,6 +18,9 @@ npm link babel-cli
 
 ## `javascript types`
 
+javascript has a (large) standard library of built-in objects 
+see [Standard built-in objects]()
+
 * built-in data types (as returned from `typeof`)
    * `string`, `number`, `boolean`, `null`, `undefined`, `object`, (`function`)
    * `string` is a special case
@@ -64,6 +67,11 @@ npm link babel-cli
       * `({}).__proto__ === Object.prototype // true`
 
 * built-in objects (provide the prototype for other objects)
+
+javascript has a (large) standard library of built-in objects 
+
+see [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+
    * String, Number, Boolean
       * these provide the prototype for "instance wrappers" around the associated primitive types
    * Array, Function, Object
@@ -72,6 +80,7 @@ npm link babel-cli
          * can be called/invoked as a function (to execute arbitrary work)
          * can be used with the `new` operator as a constructor to return a new object of the given type
             * `var Person = function() {}; var me = new Person()`
+
 ## `arrow functions (es6)`
 
 * Arrow functions inherit '`this`' from the enclosing context, also known as 'lexical' or 'static' context. The '`this`' reference is not dynamically determined and is not observed when supplied from a `bind`, `call`, or `apply` method. 
