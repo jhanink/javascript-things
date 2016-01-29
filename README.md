@@ -64,9 +64,7 @@ npm link babel-cli
       * `({}).__proto__ === Object.prototype // true`
 
 * built-in objects (provide the prototype for other objects)
-
-javascript has a (large) standard library of built-in objects. See [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
-
+   * javascript has a (large) standard library of built-in objects. See [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
    * String, Number, Boolean
       * these provide the prototype for "instance wrappers" around the associated primitive types
    * Array, Function, Object
