@@ -13,6 +13,67 @@ npm install
 npm link babel-cli
 ```
 
+## `javascript variables`
+
+* variables are "loosely typed", not "statically typed"
+* variables can be assigned and reassigned to values of different types
+
+## `javascript types`
+
+* built-in data types (as returned from `typeof`)
+   * `string`, `number`, `boolean`, `undefined`, `object`, `function` (, `null`)
+   * `string` is a special case
+      * a string literal is not an object
+         * `"abc" instanceof Object // false`
+      * a string literal can be used as if it were an object
+         * `'abc'.substring(1) // -> 'bc`
+         * the js runtime autoboxes the string literal to a String object to perform the operation
+         * `'abc'.substring(1)` is logically equivalent to `new String('abc').substring(1) // -> 'bc'`
+         * `String.substring` returns a string literal, not a new String object
+   * `null` is a special case
+      * a "primitive value" that has the formal type of `object`
+      * it is not itself an instance of any `Object`
+      * it is a value that represents `the absence of an object`
+      * a variable assigned to the value null is not a reference to anything
+      * `typeof (null) === 'object' // true`
+      * `null instanceof Object // false`
+      * `null === null // true`
+   * `undefined` is a special case
+      * a "primitive value that has the formal type of `undefined`
+      * it is not
+   * `function` is a special case
+      * a function is a regular object with the additional capability of being `callable`
+      * `typeof (function(){}) === 'function'` - a function literal of type `function`
+      * `(function(){}) instanceof Object // true`
+      * `(function(){}) instanceof Function // true`
+   * `new function(){}` creates a new object via the function literal's constructor
+      * returns `{}` -  a plain `object` 
+      * `typeof (new function(){}) === 'object'`
+      * `(new function(){}) instanceof Object // true`
+      * `(new function(){}) instanceof Function // false`
+
+* javascript primitive data types
+   * `string`, `number`, `boolean`, `null`, `undefined`
+   * primitives are **discrete** types
+   * simple value types as opposed to **complex** object types
+
+* javascript `object` data type
+   * an object a key/value (hash) data structure
+   * a function is a callable object, so some objects are functions
+      * the global `Object` object happens to be a function object
+         * `typeof Object === 'function' // true`
+   * note that object prototypal "inheritance" is really OLOO (objects linking to other objects)
+      * `({}).__proto__ === Object.prototype // true`
+
+* built-in objects (provide the prototype for other objects)
+   * String, Number, Boolean
+      * these provide the prototype for "instance wrappers" around the associated primitive types
+   * Array, Function, Object
+      * An instance of Array is a regular object that has integer key properties that have a relationship to its `length` property
+      * An instance of Function is a callable object
+         * can be called/invoked as a function (to execute arbitrary work)
+         * can be used with the `new` operator as a constructor to return a new object of the given type
+            * `var Person = function() {}; var me = new Person()`
 ## `arrow functions (es6)`
 
 * Arrow functions inherit '`this`' from the enclosing context, also known as 'lexical' or 'static' context. The '`this`' reference is not dynamically determined and is not observed when supplied from a `bind`, `call`, or `apply` method. 
