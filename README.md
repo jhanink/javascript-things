@@ -19,7 +19,7 @@ npm link babel-cli
 ## `javascript types`
 
 * built-in data types (as returned from `typeof`)
-   * `string`, `number`, `boolean`, `undefined`, `object`, `function` (, `null`)
+   * `string`, `number`, `boolean`, `null`, `undefined`, `object`, (`function`)
    * `string` is a special case
       * a string literal is not an object
          * `"abc" instanceof Object // false`
