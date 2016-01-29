@@ -49,12 +49,10 @@ npm link babel-cli
       * `typeof (new function(){}) === 'object'`
       * `(new function(){}) instanceof Object // true`
       * `(new function(){}) instanceof Function // false`
-
 * javascript primitive data types
    * `string`, `number`, `boolean`, `null`, `undefined`
    * primitives are **discrete** types
    * simple value types as opposed to **complex** object types
-
 * javascript `object` data type
    * an object a key/value (hash) data structure
    * a function is a callable object, so some objects are functions
@@ -62,8 +60,8 @@ npm link babel-cli
          * `typeof Object === 'function' // true`
    * note that object prototypal "inheritance" is really OLOO (objects linking to other objects)
       * `({}).__proto__ === Object.prototype // true`
-
-* built-in objects (provide the prototype for other objects)
+* built-in objects
+   * provide the prototype for other objects
    * javascript has a (large) standard library of built-in objects. See [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
    * String, Number, Boolean
       * these provide the prototype for "instance wrappers" around the associated primitive types
