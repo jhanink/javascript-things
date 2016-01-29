@@ -1,6 +1,8 @@
 # Javascript Things
 
-It's impossible to remember everything, and it's hard to remember everything that's important. Maintaining a list of 'everything' isn't very useful, since that's what google, mdn, and stackoverflow are for. 
+It's impossible to remember everything, and it's hard to remember everything that's important.
+
+Maintaining a list of 'everything' isn't very useful, since that's what google, mdn, and stackoverflow are for. 
 
 But I do want to remember some things. This acts as a reference for particular information that may or may not be useful to other persons. 
 
