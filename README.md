@@ -77,11 +77,13 @@ npm link babel-cli
    * String, Number, Boolean
       * these provide the prototype for "instance wrappers" around the associated primitive types
    * Array, Function, Object
-      * An instance of Array is a regular object that has integer key properties that have a relationship to its `length` property
+      * An instance of Array is a regular object integer key properties that have a relationship to its `length` property
+         * the integer key properties act as a numbered index
       * An instance of Function is a callable object
          * can be called/invoked as a function (to execute arbitrary work)
          * can be used with the `new` operator as a constructor to return a new object of the given type
             * `var Person = function() {}; var me = new Person()`
+         * within the function, `var foo = function bar() {}`, call using `foo()`, `bar()`, `arguments.callee()`
 
 ## `arrow functions (es6)`
 
@@ -126,6 +128,7 @@ babel-node code/arrays.js
 
 * Use default params to change the 'arity' of a function for partial application (and function currying)
    * Use `Function.prototype.bind` to define default leading params (es5)
+      * `var f = function (a,b,c) {console.log(arguments)}`, `f.bind(null,1,2)(999)`
    * Use default trailing parameters (es6)
 
 ```
