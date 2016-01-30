@@ -34,7 +34,7 @@ npm link babel-cli
       * a global primitive property that has a formal type of `object` but with no properties or methods
       * it is not itself an instance of any `Object`
       * it is a value that represents `the absence of an object`
-      * a variable assigned to the value null is not a reference to anything
+      * a variable assigned to the value `null` is not a reference to anything
       * `typeof (null) === 'object' // true`
       * `null instanceof Object // false`
       * `null === null // true`
