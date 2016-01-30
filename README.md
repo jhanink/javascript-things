@@ -46,7 +46,11 @@ npm link babel-cli
       * `undefined === undefined // true`
    * `NaN`
       * `typeof (NaN) === 'number' // true`
+      * `NaN instanceof Number // false`
       * `NaN === NaN // false`
+      * `NaN == NaN // false`
+      * `isNaN(1) // false`
+      * `isNaN("a") // true`
    * `function` is a special case
       * a function is a regular object with the additional capability of being `callable`
       * `typeof (function(){}) === 'function'` - a function literal of type `function`
