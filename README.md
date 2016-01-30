@@ -31,7 +31,7 @@ npm link babel-cli
          * `'abc'.substring(1)` is logically equivalent to `new String('abc').substring(1) // -> 'bc'`
          * `String.substring` returns a string literal, not a new String object
    * `null` is a special case
-      * a global property that has a simple value that has the formal type of `object` but with no properties or methods
+      * a global primitive property that has a formal type of `object` but with no properties or methods
       * it is not itself an instance of any `Object`
       * it is a value that represents `the absence of an object`
       * a variable assigned to the value null is not a reference to anything
