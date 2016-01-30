@@ -118,6 +118,15 @@ npm link babel-cli
          * are syntactic sugar for RegExp objects
          * var r = /ab+c/
 
+## `objects`
+
+* consider properties to be like variables attached to an object
+* add a property to an object using `defineProperty`
+   * `var a = {}`
+   * `Object.defineProperty(a, "p", {configurable:true, enumerable:true, writable:true}) // {p: undefined}`
+   * `Object.defineProperty(a, "p", {configurable:true, enumerable:true, value:'val'}) // {p: 'val'}`
+   * by default, the added property is immutable and not configurable
+
 ## `operators`
 
 * comma operator
