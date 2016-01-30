@@ -85,6 +85,17 @@ npm link babel-cli
             * `var Person = function() {}; var me = new Person()`
          * within the function, `var foo = function bar() {}`, call using `foo()`, `bar()`, `arguments.callee()`
 
+## `operators`
+
+* comma operator
+   * `for (var i = 0, j = 9; i <= j; i++, j--){}`
+* delete operator
+   * `var obj = {a:1};  delete obj.a;`
+* void operator
+   * `void(0)`
+* spread operator
+   * `var a=[1,2,3]; var b=[0, ...a] // b: [0,1,2,3]`
+   * `var f = (x,y,z) => a+b;  f(...a); // calls f(1,2,3)`
 ## `arrow functions (es6)`
 
 * Arrow functions inherit '`this`' from the enclosing context, also known as 'lexical' or 'static' context. The '`this`' reference is not dynamically determined and is not observed when supplied from a `bind`, `call`, or `apply` method. 
