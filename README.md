@@ -85,10 +85,10 @@ npm link babel-cli
             * `var Person = function() {}; var me = new Person()`
          * within the function, `var foo = function bar() {}`, call using `foo()`, `bar()`, `arguments.callee()`
       * Object constructor
-         * `new Object() // returns the empty object {}`
-         * `new Object(1) // returns a new Number object`
-         * `new Object(1) === new Object(1) // false: two new objects that happen to have the same value`
-         * `var a = new Number(1);  new Object(a) === new Object(a) // true: each returns the object a `
+         * `new Object()` returns the empty object `{}`
+         * `new Object(1)` returns a new Number object
+         * `new Object(1) === new Object(1) // false` two new objects that happen to have the same value
+         * `var a = new Number(1);  new Object(a) === new Object(a) // true` each returns the object `a`
 
 ## `operators`
 
