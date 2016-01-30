@@ -19,7 +19,7 @@ npm link babel-cli
 ## `javascript types`
 
 * built-in data types (as returned from `typeof`)
-   * [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+   * [See MDN: Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
    * `string`, `number`, `boolean`, `null`, `undefined`, `object`, (`function`)
    * `string` is a special case
       * a string literal is not an object
@@ -64,7 +64,7 @@ npm link babel-cli
    * note that object prototypal "inheritance" is really OLOO (objects linking to other objects)
       * `({}).__proto__ === Object.prototype // true`
 * built-in objects
-   * [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+   * [See MDN: Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
    * String, Number, Boolean
       * these provide the prototype for "instance wrappers" around the associated primitive types
    * Array, Function, Object
