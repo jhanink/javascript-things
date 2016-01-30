@@ -23,7 +23,7 @@ npm link babel-cli
    * [See MDN: Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
    * `string`, `number`, `boolean`, `null`, `undefined`, `object`, (`function`)
    * `string` is a special case
-      * a string literal is not an object
+      * a string literal primitive is not an object
          * `"abc" instanceof Object // false`
       * a string literal can be used as if it were an object
          * `'abc'.substring(1) // -> 'bc`
