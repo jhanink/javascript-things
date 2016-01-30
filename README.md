@@ -83,6 +83,11 @@ npm link babel-cli
    * Array, Function, Object
       * An instance of Array is a regular object integer key properties that have a relationship to its `length` property
          * the integer key properties act as a numbered index
+      * Array type checking
+         * `var arr = []`
+         * `arr instanceof Array  // true`
+         * `arr.constructor === Array  // true`
+         * `Array.isArray(arr)  // true`
       * An instance of Function is a callable object
          * can be called/invoked as a function (to execute arbitrary work)
          * can be used with the `new` operator as a constructor to return a new object of the given type
