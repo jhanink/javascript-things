@@ -80,7 +80,10 @@ npm link babel-cli
    * [See MDN: Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
    * String, Number, Boolean
       * these provide the prototype for "instance wrappers" around the associated primitive types
-   * Array, Function, Object
+      * String methods
+         * `charAt`, `indexOf`, `concat`, `split`, `slice`, `substring`, `toLowerCase`, `startsWith`, `trim`
+         * regex: `match`, `replace`, `search`
+   * Array, Function, Object, RegExp
       * An instance of Array is a regular object integer key properties that have a relationship to its `length` property
          * the integer key properties act as a numbered index
       * Array type checking
@@ -109,6 +112,11 @@ npm link babel-cli
          * `Rectangle.prototype = Object.create(Shape.prototype)`
          * `Rectangle.prototype.constructor = Rectangle`
          * `var r = new Rectangle();  r.move(1,1)`
+      * RegExp literal expression
+         * [see MDN: RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) 
+         * start and end with `/`
+         * are syntactic sugar for RegExp objects
+         * var r = /ab+c/
 
 ## `operators`
 
