@@ -19,6 +19,7 @@ npm link babel-cli
 ## `javascript types`
 
 * built-in data types (as returned from `typeof`)
+   * [Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
    * `string`, `number`, `boolean`, `null`, `undefined`, `object`, (`function`)
    * `string` is a special case
       * a string literal is not an object
@@ -29,7 +30,7 @@ npm link babel-cli
          * `'abc'.substring(1)` is logically equivalent to `new String('abc').substring(1) // -> 'bc'`
          * `String.substring` returns a string literal, not a new String object
    * `null` is a special case
-      * a "primitive value" that has the formal type of `object`
+      * a global property that has a simple value that has the formal type of `object` but with no properties or methods
       * it is not itself an instance of any `Object`
       * it is a value that represents `the absence of an object`
       * a variable assigned to the value null is not a reference to anything
@@ -63,8 +64,7 @@ npm link babel-cli
    * note that object prototypal "inheritance" is really OLOO (objects linking to other objects)
       * `({}).__proto__ === Object.prototype // true`
 * built-in objects
-   * provide the prototype for other objects
-   * javascript has a (large) standard library of built-in objects. See [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+   * [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
    * String, Number, Boolean
       * these provide the prototype for "instance wrappers" around the associated primitive types
    * Array, Function, Object
