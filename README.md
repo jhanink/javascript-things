@@ -102,7 +102,7 @@ babel-node code/arrow-functions.js
 * Array prototype methods may alter or create. '`shift`' alters, whereas '`slice`' creates.
    * some methods that return a new array
       * `.concat()`,  `.slice()`,  `.filter()`,  `.map()`
-      * note that `.map()` doesn't alter the original array, the supplied callback `fn(curVal,i,origArray)` function can
+      * note that while `.map()` doesn't alter the original array, it can be modified from the callback function `fn(curVal,i,origArray)`
    * some methods that alter the array
       * `.shift()` - returns the removed (head) element
       * `.unshift()` - returns the new length of the array
