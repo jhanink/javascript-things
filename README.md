@@ -92,9 +92,9 @@ npm link babel-cli
          * `var a = new Number(1);  new Object(a) === new Object(a) // true` each returns the object `a`
       * Object freezing
          * `var a = {a:1};  Object.freeze(a)` `a` cannot be modified or extended 
-      * Object creation from another object (not prototypal inheritance)
+      * Object creation by copying an object (not prototypal inheritance)
          * `var b = Object.assign({}, a)` copies own properties from `a` to target and returns the target
-      * Object prototypal inheritance
+      * Object create with prototypal inheritance
          * `function Shape() {this.x=0, this.y=1}`
          * `Shape.prototype.move = function(x,y) {this.x += x; this.y += y;}`
          * `function Rectangle() {Shape.call(this)}`
