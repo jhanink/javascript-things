@@ -137,12 +137,12 @@ npm link babel-cli
 ## `objects`
 
 * consider properties to be like variables attached to an object
-* add a property to an object using `defineProperty`
+* add a property using `defineProperty`
    * `var a = {}`
    * `Object.defineProperty(a, 'p', {configurable:true, enumerable:true, writable:true}) // {p: undefined}`
    * `Object.defineProperty(a, 'p', {configurable:true, enumerable:true, value:'val'}) // {p: 'val'}`
-   * NOTE: by default, the prop will be immutable and not enumerable (excluded from `for..in` loop or `Object.keys()`
-      * `Object.defineProperty(a, 'p') // immutable`
+   * by default, the prop will be immutable and not enumerable (excluded from `for...in` loop and `Object.keys()`
+      * `Object.defineProperty(a, 'p', {}) // immutable`
 * object property enumeration
    * `for...in` loops over all own enumerable properties and in prototype chain
    * `Object.keys(o)` array of all own enumerable property names and NOT in prototype chain
