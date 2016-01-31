@@ -190,7 +190,7 @@ npm link babel-cli
 
 * An array is of type '`object`' but is printed as '[]' as opposed to '{}'
    * Check if an object is an array
-      * `Array.isArray(obj)`.
+      * `Array.isArray(obj)`
       * `obj instanceof Array`
 * An array literal is a kind of object initializer
 * Extra commas in array literals
