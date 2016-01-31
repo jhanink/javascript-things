@@ -143,6 +143,10 @@ npm link babel-cli
    * `Object.defineProperty(a, 'p', {configurable:true, enumerable:true, value:'val'}) // {p: 'val'}`
    * NOTE: by default, the prop will be immutable and not enumerable (excluded from `for..in` loop or `Object.keys()`
       * `Object.defineProperty(a, 'p') // immutable`
+* object property enumeration
+   * `for...in` loops over all own enumerable properties and in prototype chain
+   * `Object.keys(o)` array of all own enumerable property names and NOT in prototype chain
+   * `Object.getOwnPropertyNames(o)` array of all own property names (both enumerable and not)
 
 ## `arrays`
 
