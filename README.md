@@ -109,7 +109,7 @@ npm link babel-cli
          * `var a = {a:1};  Object.freeze(a)` `a` cannot be modified or extended 
       * Object creation by copying an object (not prototypal inheritance)
          * `var b = Object.assign({}, a)` copies own properties from `a` to target and returns the target
-      * Object create with prototypal inheritance
+      * Object creation with prototypal inheritance
          * `function Shape() {this.x=0, this.y=1}`
          * `Shape.prototype.move = function(x,y) {this.x += x; this.y += y;}`
          * `function Rectangle() {Shape.call(this)}`
@@ -145,12 +145,25 @@ npm link babel-cli
       * `Object.defineProperty(a, 'p', {}) // immutable`
 * object property enumeration
    * `for...in` loops over all own enumerable properties and in prototype chain
-   * `Object.keys(o)` array of all own enumerable property names and NOT in prototype chain
+   * `Object.keys(o)` array of all own (not in prototype chain) enumerable property names 
    * `Object.getOwnPropertyNames(o)` array of all own property names (both enumerable and not)
+* create an object of a given type without a constructor function
+   * `var Phone = {brand:"generic", getBrand: function() {console.log(this.brand)}}`
+   * `var iphone = Object.create(Phone);`
+   * `iphone.brand = "iphone"`
+   * `iphone.getBrand() // iphone`
+* getters and setters
+   * `var a = {a: 1, get propA() {return this.a}, set propA(x) {this.a = x}}`
+   * `a.a // 1`
+   * `a.propA // 1`
+   * `a.propA = 100`
+   * `a.a // 100`
 
 ## `arrays`
 
-* An array is of type '`object`' but is printed as '[]' as opposed to '{}'. Check if an object is an array using `Array.isArray(obj)`.
+* An array is of type '`object`' but is printed as '[]' as opposed to '{}'
+   * Check if an object is an array using `Array.isArray(obj)`.
+* An array literal is a kind of object initializer
 * The '`arguments`' object of a regular function is an 'array-like' object that prints '{}'. 
    * It can be converted to a proper array with `Array.from(arguments)` (es6)
    * `Array.slice(arguments,0)` (es5) also works but is not recommended
