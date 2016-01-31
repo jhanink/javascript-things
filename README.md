@@ -72,11 +72,12 @@ npm link babel-cli
 * javascript `object` data type
    * an object is a key/value (hash) data structure
    * a function is a callable object, so some objects are functions
-      * the global objects that have constructors are 'function' types 
+      * objects that have constructors are 'function' types 
          * `typeof Object === 'function' // true`
          * `typeof Number === 'function' // true`
          * `typeof String === 'function' // true`
          * `typeof Boolean === 'function' // true`
+         * `typeof Array === 'function' // true`
    * note that object prototypal "inheritance" is really OLOO (objects linking to other objects)
       * `({}).__proto__ === Object.prototype // true`
 * built-in objects
