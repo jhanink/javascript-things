@@ -137,6 +137,14 @@ npm link babel-cli
 ## `objects`
 
 * consider properties to be like variables attached to an object
+   * a property can be an identifier, string literal, or a number
+   * a property that is not a valid identifier can only be accessed via bracket notation
+   * `var a = {a:1, 20:"twenty", "":"empty", "@-^": "works"}`
+   * `a.a // 1`
+   * `a[20] // 'twenty'`
+   * `a["20"] // 'twenty`
+   * `a[""] // 'empty'`
+   * `a["@-^"] // 'works'`
 * add a property using `defineProperty`
    * `var a = {}`
    * `Object.defineProperty(a, 'p', {configurable:true, enumerable:true, writable:true}) // {p: undefined}`
@@ -171,6 +179,12 @@ npm link babel-cli
       * `Object.keys(a) // [ '0', '1', '3', '4' ]`
    * the last of any trailing commas is ignored
       * `a.length // 7`
+* The `length` property
+   * setting length can resize an array
+   * `var a = [1,2]`
+   * `a.length // 2`
+   * `a.length = 5 // -> [1, 2, , , ]`
+   * `a.length = 1 // -> [1]`
 * The '`arguments`' object of a regular function is an 'array-like' object that prints '{}'. 
    * It can be converted to a proper array with `Array.from(arguments)` (es6)
    * `Array.slice(arguments,0)` (es5) also works but is not recommended
