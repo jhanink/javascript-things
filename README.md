@@ -118,16 +118,6 @@ npm link babel-cli
          * are syntactic sugar for RegExp objects
          * var r = /ab+c/
 
-## `objects`
-
-* consider properties to be like variables attached to an object
-* add a property to an object using `defineProperty`
-   * `var a = {}`
-   * `Object.defineProperty(a, 'p', {configurable:true, enumerable:true, writable:true}) // {p: undefined}`
-   * `Object.defineProperty(a, 'p', {configurable:true, enumerable:true, value:'val'}) // {p: 'val'}`
-   * NOTE: by default, the prop will be immutable and not enumerable (excluded from `for..in` loop or `Object.keys()`
-      * `Object.defineProperty(a, 'p') // immutable`
-
 ## `operators`
 
 * comma operator
@@ -139,6 +129,16 @@ npm link babel-cli
 * spread operator
    * `var a=[1,2,3]; var b=[0, ...a] // b: [0,1,2,3]`
    * `var f = (x,y,z) => a+b;  f(...a); // calls f(1,2,3)`
+
+## `objects`
+
+* consider properties to be like variables attached to an object
+* add a property to an object using `defineProperty`
+   * `var a = {}`
+   * `Object.defineProperty(a, 'p', {configurable:true, enumerable:true, writable:true}) // {p: undefined}`
+   * `Object.defineProperty(a, 'p', {configurable:true, enumerable:true, value:'val'}) // {p: 'val'}`
+   * NOTE: by default, the prop will be immutable and not enumerable (excluded from `for..in` loop or `Object.keys()`
+      * `Object.defineProperty(a, 'p') // immutable`
 
 ## `arrays`
 
