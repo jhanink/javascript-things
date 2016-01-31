@@ -70,7 +70,7 @@ npm link babel-cli
    * primitives are **discrete** types
    * simple value types as opposed to **complex** object types
 * javascript `object` data type
-   * an object a key/value (hash) data structure
+   * an object is a key/value (hash) data structure
    * a function is a callable object, so some objects are functions
       * the global `Object` object happens to be a function object
          * `typeof Object === 'function' // true`
