@@ -119,8 +119,8 @@ npm link babel-cli
       * RegExp literal expression
          * [see MDN: RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) 
          * start and end with `/`
-         * are syntactic sugar for RegExp objects
-         * var r = /ab+c/
+         * `var r = /ab+c/`
+         * `r instanceof RegExp // true`
 
 ## `operators`
 
