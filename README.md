@@ -164,6 +164,13 @@ npm link babel-cli
 * An array is of type '`object`' but is printed as '[]' as opposed to '{}'
    * Check if an object is an array using `Array.isArray(obj)`.
 * An array literal is a kind of object initializer
+* Extra commas in array literals
+   * `var a = [1,2,,4,5,,,]`
+   * the unspecified elements will be `undefined`
+      * `a[2] // undefined`
+      * `Object.keys(a) // [ '0', '1', '3', '4' ]`
+   * the last of any trailing commas is ignored
+      * `a.length // 7`
 * The '`arguments`' object of a regular function is an 'array-like' object that prints '{}'. 
    * It can be converted to a proper array with `Array.from(arguments)` (es6)
    * `Array.slice(arguments,0)` (es5) also works but is not recommended
