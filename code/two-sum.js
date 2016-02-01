@@ -2,14 +2,14 @@
 //
 // The function twoSum should return indices of the two numbers such that they add up to the target,
 // where index1 must be less than index2. Please note that your returned answers 
-// (both index1 and index2) are not zero-based.
 //
 // You may assume that each input would have exactly one solution.
 //
-// Input: numbers={2, 7, 11, 15}, target=9
+// Input: numbers=[2, 7, 11, 15], target=9
 // Output: index1=1, index2=2
 
-
+var nums = [2, 7, 11, 15];
+var target = 9;
 // O(n^2) -- bad
 var _twoSum = function(nums, target) {
   for (var i=0;i<nums.length;i++) {
@@ -18,8 +18,8 @@ var _twoSum = function(nums, target) {
       var two = nums[j];
       if (one + two === target) {
         var result = [];
-        result.push(i+1);
-        result.push(j+1);
+        result.push(i);
+        result.push(j);
         return result;
       }
     }
@@ -34,12 +34,18 @@ var twoSum = function (nums, target) {
     var first = map[next];
     if (first !== undefined) {
       var result = []; 
-      result.push(first+1);
-      result.push(i+1);
+      result.push(first);
+      result.push(i);
       return result;
     } else {
       map[target-next] = i;
     }   
   }
 }
+
+var r = twoSum(nums, target);
+console.log("input: ", nums);
+console.log("target: ", target);
+console.log("result indices: ", r);
+console.log("result values: ", nums[r[0]], nums[r[1]]);
 
