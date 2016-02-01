@@ -5,11 +5,11 @@
 //
 // You may assume that each input would have exactly one solution.
 //
-// Input: numbers=[2, 7, 11, 15], target=9
-// Output: index1=1, index2=2
+// Input: numbers=[2, 7, 11, 15], target=26
+// Output: [2,3]
 
 var nums = [2, 7, 11, 15];
-var target = 9;
+var target = 26;
 // O(n^2) -- bad
 var _twoSum = function(nums, target) {
   for (var i=0;i<nums.length;i++) {
