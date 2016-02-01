@@ -252,6 +252,24 @@ babel-node code/arrow-functions.js
 babel-node code/functions.js
 ```
 
+## `prototype, function constructor`
+
+* a class is an abstract definition used to "instantiate" or "realize" a concrete object
+* a prototype is an existing object that acts as a template to initialize a new object
+   * `var P = function() {this.test = 500}`
+   * `var b = new P()`
+      * creates an object from the constructor function of `P`
+      * `b` is a new object, initialized to the value `{test: 500}`
+      * `b.__proto__ === P.prototype` now b has a pointer to `P`
+      * `b` has its own object value but also inherits from `P`
+      * `b.__proto__` can be assigned to another parent, `b.__proto__ = Q.prototype`
+      * `.prototype` changes are dynamic and visible to all children
+      * `var c = new P()`
+      * `P.prototype.hi=10`
+      * `b.hi === 10 && c.hi === 10 // true`
+
+
+
 ## `code examples`
 
 * flatten an array using recursive reduce `babel-node code/reduce.js`
