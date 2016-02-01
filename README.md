@@ -267,8 +267,16 @@ babel-node code/functions.js
       * `var c = new P()`
       * `P.prototype.hi=10`
       * `b.hi === 10 && c.hi === 10 // true`
-
-
+   * use `Object.create`
+      * `var a = {hi: function() {return "hi"}}`
+      * `var b = Object.create(a)`
+      * `b.__proto__ === a // true`
+      * `b.hi() // -> "hi"`
+   * create a type hierarchy
+      * `var Animal = function() {this.alive = true}`
+      * `var Mammal = function() {Animal.call(this); this.warm = true}`
+      * `var dog = new Mammal()`
+      * `dog.alive && dog.warm // true`
 
 ## `code examples`
 
