@@ -297,6 +297,10 @@ babel-node code/functions.js
    * place `use strict` at the head of a file
    * or place `use strict` at the beginning of a function
    * do not concatenate mixed strict and non-strict files - whichever is first wins..
+* template strings
+   * string literals with embedded expressions
+   * `var num = 22`
+   * `var t = ``the number is ${num}```
 
 ## `code examples`
 
