@@ -105,8 +105,10 @@ npm link babel-cli
          * `new Object(1)` returns a new Number object
          * `new Object(1) === new Object(1) // false` two new objects that happen to have the same value
          * `var a = new Number(1);  new Object(a) === new Object(a) // true` each returns the object `a`
-      * Object freezing
-         * `var a = {a:1};  Object.freeze(a)` `a` cannot be modified or extended 
+      * Object.freeze
+         * `var a = {p:1}; Object.freeze(a)` - `p` cannot be modified or extended 
+      * Object.preventExsions
+         * `var a = {p:1}; Object.preventExtensions(a)` - `p` can be changed but `q` can't be added
       * Object creation by copying an object (not prototypal inheritance)
          * `var b = Object.assign({}, a)` copies own properties from `a` to target and returns the target
       * Object creation with prototypal inheritance
@@ -277,6 +279,23 @@ babel-node code/functions.js
       * `var Mammal = function() {Animal.call(this); this.warm = true}`
       * `var dog = new Mammal()`
       * `dog.alive && dog.warm // true`
+
+## `undefined`
+
+* A variable can be undefined, and a value can be undefined
+   * `var a` // a declared, b not declared
+   * `typeof(a) // 'undefined'`
+   * `typeof(b) // 'undefined'`
+   * `a == null // true`
+   * `b == null // throws ReferenceError: b is not defined`
+
+## `language features`
+
+* `for...of` (es2015) - like `for...in` but passes the value of property instead of the name
+* strict mode
+   * place `use strict` at the head of a file
+   * or place `use strict` at the beginning of a function
+   * do not concatenate mixed strict and non-strict files - whichever is first wins..
 
 ## `code examples`
 
