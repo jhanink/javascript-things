@@ -99,7 +99,8 @@ npm link babel-cli
          * can be called/invoked as a function (to execute arbitrary work)
          * can be used with the `new` operator as a constructor to return a new object of the given type
             * `var Person = function() {}; var me = new Person()`
-         * within the function, `var foo = function bar() {}`, call using `foo()`, `bar()`, `arguments.callee()`
+         * within the function, `var foo = function bar() {}`, call using `foo()`, `bar()`
+         * do not use `arguments.callee` -  not supported in strict mode. Use the function name.
       * Object constructor
          * `new Object()` returns the empty object `{}`
          * `new Object(1)` returns a new Number object
