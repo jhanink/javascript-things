@@ -300,7 +300,7 @@ babel-node code/functions.js
 * template strings
    * string literals with embedded expressions
    * `var num = 22`
-   * `var t = ``the number is ${num}`` `
+   * ``var t = `the number is ${num}` ``
 
 ## `code examples`
 
