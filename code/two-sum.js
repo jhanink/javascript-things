@@ -28,19 +28,17 @@ var _twoSum = function(nums, target) {
 
 // O(n)
 var twoSum = function (nums, target) {
-  var map = {}; 
+  var hash = {}; 
   for (var i=0;i<nums.length;i++) {
-    var next = nums[i];
-    var first = map[next];
-    if (first !== undefined) {
-      var result = []; 
-      result.push(first);
-      result.push(i);
-      return result;
+    var num = hash[i];
+    var found = hash[num];
+    if (found !== undefined) {
+      return [found, i]; 
     } else {
-      map[target-next] = i;
+      hash[target-found] = i;
     }   
   }
+  return [];
 }
 
 var r = twoSum(nums, target);
