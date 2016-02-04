@@ -292,7 +292,7 @@ babel-node code/functions.js
 
 ## `language features`
 
-* `for...of` (es2015) - like `for...in` but passes the value of property instead of the name
+* `for...of` (es2015) - like `for...in` but iterates over the property values instead of the keys
 * strict mode
    * place `use strict` at the head of a file
    * or place `use strict` at the beginning of a function
