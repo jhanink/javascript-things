@@ -109,7 +109,7 @@ npm link babel-cli
          * `var a = new Number(1);  new Object(a) === new Object(a) // true` each returns the object `a`
       * Object.freeze
          * `var a = {p:1}; Object.freeze(a)` - `p` cannot be modified or extended 
-      * Object.preventExsions
+      * Object.preventExtensions
          * `var a = {p:1}; Object.preventExtensions(a)` - `p` can be changed but `q` can't be added
       * Object creation by copying an object (not prototypal inheritance)
          * `var b = Object.assign({}, a)` copies own properties from `a` to target and returns the target
