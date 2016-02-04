@@ -288,7 +288,7 @@ babel-node code/functions.js
    * `typeof(a) // 'undefined'`
    * `typeof(b) // 'undefined'`
    * `a == null // true`
-   * `b == null // throws ReferenceError: b is not defined`
+   * `b == null // in strict mode throws ReferenceError: b is not defined`
 
 ## `language features`
 
