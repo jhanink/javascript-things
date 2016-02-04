@@ -49,7 +49,7 @@ npm link babel-cli
       * `typeof(undefined) === 'undefined' // true`
       * `undefined instanceof Object // false`
       * `undefined === undefined // true`
-   * `NaN` is a an especially special case
+   * `NaN` is an especially special case
       * `typeof (NaN) === 'number' // true`
       * `NaN instanceof Number // false`
       * `NaN === NaN // false`
