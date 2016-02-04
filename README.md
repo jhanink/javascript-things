@@ -31,9 +31,10 @@ npm link babel-cli
          * the js runtime autoboxes the string literal to a String object to perform the operation
          * `'abc'.substring(1)` is logically equivalent to `new String('abc').substring(1) // -> 'bc'`
          * `String.substring` returns a string literal, not a new String object
-   * `number`, `boolean` literal primitives can be autoboxed
+   * `number`, `boolean`, `string` literal primitives can be autoboxed
       * `(1).toFixed(2) // '1.00'`
       * `true.valueOf() // true`
+      * `abc`.indexOf('a') // 0`
    * `null` is a special case
       * a global primitive property that has a formal type of `object` but with no properties or methods
       * it is not itself an instance of any `Object`
