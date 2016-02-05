@@ -24,8 +24,8 @@ npm link babel-cli
    * `string`, `number`, `boolean`, `null`, `undefined`, `object`, (`function`)
    * `string` is a special case
       * a string literal primitive is not an object
-         * `typeof("abc") === 'string' // true`
-         * `"abc" instanceof Object // false`
+         * `typeof('abc') === 'string' // true`
+         * `'abc' instanceof Object // false`
       * a string literal can be used as if it were an object
          * `'abc'.substring(1) // -> 'bc`
          * the js runtime autoboxes the string literal to a String object to perform the operation
