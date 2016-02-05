@@ -34,7 +34,7 @@ npm link babel-cli
    * `number`, `boolean`, `string` literal primitives can be autoboxed
       * `(1).toFixed(2) // '1.00'`
       * `true.valueOf() // true`
-      * `abc`.indexOf('a') // 0`
+      * `'abc'.indexOf('b') // 1`
    * `null` is a special case
       * a global primitive property that has a formal type of `object` but with no properties or methods
       * it is not itself an instance of any `Object`
