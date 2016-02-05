@@ -171,7 +171,7 @@ npm link babel-cli
    * `a.propA = 100`
    * `a.a // 100`
 * object literals in ES2015 (es6)
-   * can set the prototype explicitly, equivalent to the imperative `Object.create(targetProtoObject)`
+   * can declare the target prototype, equivalent to the imperative `Object.create(targetProtoObject)`
    * can use compact function notation
    * can use computed property names
 ```
