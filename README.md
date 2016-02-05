@@ -171,13 +171,13 @@ npm link babel-cli
    * `a.propA = 100`
    * `a.a // 100`
 * object literals in ES2015 (es6)
-   * can set the prototype
+   * can set the prototype explicitly (or use `Object.create(targetProtoObject)`)`
    * can use compact function notation
    * can use computed property names
 ```
   var obj = {
     // __proto__
-    __proto__: theProtoObj,
+    __proto__: targetProtoObject,
     // Shorthand for ‘handler: handler’
     handler,
     // Methods
