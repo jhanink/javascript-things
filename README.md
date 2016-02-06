@@ -27,7 +27,7 @@ npm link babel-cli
          * `typeof('abc') === 'string' // true`
          * `'abc' instanceof Object // false`
       * a string literal can be used as if it were an object
-         * `'abc'.substring(1) // -> 'bc`
+         * `'abc'.substring(1) // -> 'b`
          * the js runtime autoboxes the string literal to a String object to perform the operation
          * `'abc'.substring(1)` is logically equivalent to `new String('abc').substring(1) // -> 'bc'`
          * `String.substring` returns a string literal, not a new String object
