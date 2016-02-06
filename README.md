@@ -157,6 +157,7 @@ npm link babel-cli
       * `Object.defineProperty(a, 'p', {}) // immutable`
 * object property enumeration
    * `for...in` loops over all own enumerable properties and in prototype chain
+   * use `obj.hasOwnProperty(item)` to check for only own properties.
    * `Object.keys(o)` array of all own (not in prototype chain) enumerable property names 
    * `Object.getOwnPropertyNames(o)` array of all own property names (both enumerable and not)
 * create an object of a given type without a constructor function
