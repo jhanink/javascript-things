@@ -366,6 +366,9 @@ babel-node code/functions.js
 * [The javascript job market](https://medium.com/javascript-scene/forget-the-click-bait-here-s-what-the-javascript-job-market-really-looks-like-in-2016-ddfe0d39b467#.qayjac9w2)
 * [The es6 conundrum](http://www.sitepoint.com/the-es6-conundrum/)
 * [leetcode mockinterview](https://leetcode.com/mockinterview/)
+* [Job search technical interviewing](http://robertheaton.com/2014/03/07/lessons-from-a-silicon-valley-job-search/)
+* [Intervews: CS/Algos vs engineering - Hacker News](http://robertheaton.com/2014/03/07/lessons-from-a-silicon-valley-job-search/)
+
 
 ## `misc fun random`
 
