@@ -111,7 +111,7 @@ npm link babel-cli
          * `var a = {p:1}; Object.freeze(a)` - `p` cannot be modified or extended 
       * Object.preventExtensions
          * `var a = {p:1}; Object.preventExtensions(a)` - `p` can be changed but `q` can't be added
-      * Object creation by copying an object (not prototypal inheritance)
+      * Object creation by copying (shallow clone) an object (not prototypal inheritance)
          * `var b = Object.assign({}, a)` copies own properties from `a` to target and returns the target
       * Object creation with prototypal inheritance
          * `function Shape() {this.x=0, this.y=1}`
