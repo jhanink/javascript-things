@@ -368,6 +368,7 @@ babel-node code/functions.js
 * [leetcode mockinterview](https://leetcode.com/mockinterview/)
 * [Job search technical interviewing](http://robertheaton.com/2014/03/07/lessons-from-a-silicon-valley-job-search/)
 * [Intervews: CS/Algos vs engineering - Hacker News](http://robertheaton.com/2014/03/07/lessons-from-a-silicon-valley-job-search/)
+* [Interview process at Stripe](https://www.quora.com/What-is-the-engineering-interview-process-like-at-Stripe)
 
 
 ## `misc fun random`
