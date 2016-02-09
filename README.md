@@ -72,7 +72,7 @@ npm link babel-cli
 * javascript `object` data type
    * an object is a key/value (hash) data structure
    * a function is a callable object, so some objects are functions
-      * objects that have constructors are 'function' types 
+      * objects that are `function` types can be constructors with `new`
          * `typeof Object === 'function' // true`
          * `typeof Number === 'function' // true`
          * `typeof String === 'function' // true`
