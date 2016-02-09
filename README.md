@@ -41,13 +41,13 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
    * `JScript`, used in IE with the `Trident` layout engine
    * `Rhino`, used in Java
 
-## `javascript variables`
+## `variables`
 
 * variables are "loosely typed", not "statically typed"
 * variables can be assigned and reassigned to values of different types
 * variable declarations are hoisted to the top of their function scope
 
-## `javascript types`
+## `types`
 
 * built-in data types (as returned from `typeof`)
    * `string`, `number`, `boolean`, `null`, `undefined`, `object`, (`function`)
