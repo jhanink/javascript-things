@@ -13,6 +13,8 @@ npm link babel-cli
 
 See the ECMAScript standard by TC39, [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 
+The JSON Data Interchange Format standard can be found at [ECMA-404](http://www.ecma-international.org/publications/standards/Ecma-404.htm)
+
 ## `history`
 
 * `JavaScript` was first called `Mocha`, then `LiveScript`
