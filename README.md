@@ -11,6 +11,8 @@ npm install
 npm link babel-cli
 ```
 
+[See the spec ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+
 ## `javascript variables`
 
 * variables are "loosely typed", not "statically typed"
