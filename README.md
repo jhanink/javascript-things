@@ -22,13 +22,14 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
 * First released in Netscape Navigator 2.0 in March, 1996
 * Delivered to standards body `Ecma International` in November, 1996
 * Categorized as `ECMA-262` under working group `TC39`
-* `es1` was adopted in June, 1997
-* `es2` was adopted in June, 1998
-* `es3` was adopted in December, 1999
-* The 4th edition was never published
-* `es5` was adopted in December, 2009
-* `es5.1` was adopted in June, 2011
-* `es6`, officially `ES2015`, was adopted June 2015
+* Release timeline
+   * `es1` was adopted in June, 1997
+   * `es2` was adopted in June, 1998
+   * `es3` was adopted in December, 1999
+   * The 4th edition was never published
+   * `es5` was adopted in December, 2009
+   * `es5.1` was adopted in June, 2011
+   * `es6`, officially `ES2015`, was adopted June 2015
 
 ## `implementations`
 
