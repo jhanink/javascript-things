@@ -89,18 +89,18 @@ npm link babel-cli
    * `Array`, `Function`, `Object`, `RegExp`
       * An instance of Array is a regular object integer key properties that have a relationship to its `length` property
          * the integer key properties act as a numbered index
-      * Array type checking
+      * `Array` type checking
          * `var arr = []`
          * `arr instanceof Array  // true`
          * `arr.constructor === Array  // true`
          * `Array.isArray(arr)  // true`
-      * An instance of Function is a callable object
+      * An instance of `Function` is a callable object
          * can be called/invoked as a function (to execute arbitrary work)
          * can be used with the `new` operator as a constructor to return a new object of the given type
             * `var Person = function() {}; var me = new Person()`
          * within the function, `var foo = function bar() {}`, call using `foo()`, `bar()`
          * do not use `arguments.callee` -  not supported in strict mode. Use the function name.
-      * Object constructor
+      * `Object` constructor
          * `new Object()` returns the empty object `{}`
          * `new Object(1)` returns a new Number object
          * `new Object(1) === new Object(1) // false` two new objects that happen to have the same value
