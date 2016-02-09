@@ -191,6 +191,11 @@ npm link babel-cli
 ## `arrays`
 
 * An array is of type '`object`' but is printed as '[]' as opposed to '{}'
+   * An Array is an iterable object with index keys and a length property
+   * es6 array iterators have a `.next()` method
+      * `var a = [10,20,30]`
+      * `var aIter = a.keys()`
+      * `aIter.next().value // -> 10`
    * Check if an object is an array
       * `Array.isArray(obj)`
       * `obj instanceof Array`
