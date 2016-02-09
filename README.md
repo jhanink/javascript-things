@@ -15,7 +15,7 @@ See the _ECMAScript standard_ by TC39, [ECMA-262](http://www.ecma-international.
 
 The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international.org/publications/standards/Ecma-404.htm)
 
-## `history`
+## `intro: history`
 
 * `JavaScript` was first called `Mocha`, then `LiveScript`
 * First announced in December, 1995
@@ -31,7 +31,7 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
    * `es5.1` was adopted in June, 2011
    * `es6`, officially `ES2015`, was adopted June 2015
 
-## `implementations`
+## `intro: implementations`
 
 * es 5.1 implementations
    * `SpiderMonkey`, used in Firefox with the `Gecko` layout engine
