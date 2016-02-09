@@ -210,7 +210,9 @@ npm link babel-cli
       * `a[2] // undefined`
       * `Object.keys(a) // [ '0', '1', '3', '4' ]`
    * the last of any trailing commas is ignored
-      * `a.length // 7`
+      * `a.length // -> 7`
+      * `[10,].length // -> 1`
+      * `[10,,].length // -> 2`
 * The `length` property
    * setting length can resize an array
    * `var a = [1,2]`
