@@ -11,9 +11,9 @@ npm install
 npm link babel-cli
 ```
 
-See the _ECMAScript standard by TC39_, [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+See the _ECMAScript standard_ by TC39, [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 
-The _JSON standard_ can be `found` at [ECMA-404](http://www.ecma-international.org/publications/standards/Ecma-404.htm)
+The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international.org/publications/standards/Ecma-404.htm)
 
 ## `history`
 
