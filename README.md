@@ -30,6 +30,15 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
 * `es5.1` was adopted in June, 2011
 * `es6`, officially `ES2015`, was adopted June 2015
 
+## `implementations`
+
+* es 5.1 implementations
+   * `SpiderMonkey`, used in Firefox with the `Gecko` layout engine
+   * `V8`, used in Chrome
+   * `JavaScriptCore (Nitro)`, used in WebKit, Safari
+   * `Chakra`, used in Microsoft Edge
+   * `JScript`, used in IE with the `Trident` layout engine
+   * `Rhino`, used in Java
 
 ## `javascript variables`
 
