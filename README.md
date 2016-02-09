@@ -20,7 +20,6 @@ npm link babel-cli
 ## `javascript types`
 
 * built-in data types (as returned from `typeof`)
-   * [See MDN: Data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
    * `string`, `number`, `boolean`, `null`, `undefined`, `object`, (`function`)
    * `string` is a special case
       * a string literal primitive is not an object
@@ -82,7 +81,6 @@ npm link babel-cli
    * note that object prototypal "inheritance" is really OLOO (objects linking to other objects)
       * `({}).__proto__ === Object.prototype // true`
 * built-in objects
-   * [See MDN: Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
    * String, Number, Boolean
       * these provide the prototype for "instance wrappers" around the associated primitive types
       * String methods
@@ -121,7 +119,6 @@ npm link babel-cli
          * `Rectangle.prototype.constructor = Rectangle`
          * `var r = new Rectangle();  r.move(1,1)`
       * RegExp literal expression
-         * [see MDN: RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) 
          * start and end with `/`
          * `var r = /ab+c/`
          * `r instanceof RegExp // true`
