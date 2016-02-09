@@ -196,7 +196,7 @@ npm link babel-cli
       * `var a = [10,20,30]`
       * `var aIter = a.keys()`
       * `aIter.next().value // -> 10`
-   * An iterator `a.keys()` doesn't skip holes, whereas `Object.keys()` does
+   * An iterator `a.keys()` is sparse (doesn't skip holes); `Object.keys()` is dense
       * `var a = [10,,20,,30,40]`
       * `[...a.keys()] // -> [0,1,2,3,4,5]`
       * `Object.keys() // -> [0,2,4,5]`
