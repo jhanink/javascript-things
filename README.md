@@ -226,7 +226,7 @@ npm link babel-cli
 * An array-like object is an iterable object; e.g. `{ '0': 10, '1': 20 }` and has a `.length` property
 * Array prototype methods may alter or create. '`shift`' alters, whereas '`slice`' creates.
    * some methods that return a new array
-      * `.concat()`,  `.slice()`,  `.filter()`,  `.map()`
+      * `.concat()`, `.slice()`, `.filter()`, `.map()`, `.reduce()`
       * note that while `.map()` doesn't alter the original array, it can be modified from the callback function `fn(curVal,i,origArray)`
    * some methods that alter the array
       * `.shift()` - returns the removed (head) element
