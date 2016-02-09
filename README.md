@@ -241,11 +241,11 @@ babel-node code/arrays.js
 
 ## `arrow functions (es6)`
 
-* Arrow functions inherit '`this`' from the enclosing context, also known as 'lexical' or 'static' context. The '`this`' reference is not dynamically determined and is not observed when supplied from a `bind`, `call`, or `apply` method. 
+* Arrow functions inherit `this` from the enclosing context, also known as 'lexical' or 'static' context. The '`this`' reference is not dynamically determined and is not observed when supplied from a `bind`, `call`, or `apply` method. 
    * A regular function that isn't already bound can be re-wired to a different object.
    * An arrow function is equivalent to `function() {}.bind(this)` that is statically bound and cannot be re-bound
-* Arrow functions do not get their own '`arguments`' object.
-* Since arrow functions don't get a proper '`arguments`', use a 'rest' parameter instead.
+* Arrow functions do not get their own `arguments` object.
+* Since arrow functions don't get a proper `arguments`, use a 'rest' parameter instead.
    * Note that arrays and 'rest' objects can be used to 'spread' out as parameters to another function invocation.
 * Use parentheses to return an object literal when using concise syntax
    * `let f = () => ({ a: 1});` // without parens, it's just a function block without a return statement and returns `undefined`.
