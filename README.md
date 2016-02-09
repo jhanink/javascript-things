@@ -196,6 +196,10 @@ npm link babel-cli
       * `var a = [10,20,30]`
       * `var aIter = a.keys()`
       * `aIter.next().value // -> 10`
+   * An iterator `a.keys()` doesn't skip holes, whereas `Object.keys()` does
+      * `var a = [10,,20,,30,40]`
+      * `[...a.keys()] // -> [0,1,2,3,4,5]`
+      * `Object.keys() // -> [0,2,4,5]`
    * Check if an object is an array
       * `Array.isArray(obj)`
       * `obj instanceof Array`
