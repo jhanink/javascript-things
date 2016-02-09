@@ -11,7 +11,7 @@ npm install
 npm link babel-cli
 ```
 
-[See the ECMAScript standard, ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+See the ECMAScript standard by TC39, [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 
 ## `javascript variables`
 
