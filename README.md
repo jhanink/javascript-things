@@ -81,12 +81,12 @@ npm link babel-cli
    * note that object prototypal "inheritance" is really OLOO (objects linking to other objects)
       * `({}).__proto__ === Object.prototype // true`
 * built-in objects
-   * String, Number, Boolean
+   * `String`, `Number`, `Boolean`
       * these provide the prototype for "instance wrappers" around the associated primitive types
       * String methods
          * `charAt`, `indexOf`, `concat`, `split`, `slice`, `substring`, `toLowerCase`, `startsWith`, `trim`
          * regex: `match`, `replace`, `search`
-   * Array, Function, Object, RegExp
+   * `Array`, `Function`, `Object`, `RegExp`
       * An instance of Array is a regular object integer key properties that have a relationship to its `length` property
          * the integer key properties act as a numbered index
       * Array type checking
@@ -105,9 +105,9 @@ npm link babel-cli
          * `new Object(1)` returns a new Number object
          * `new Object(1) === new Object(1) // false` two new objects that happen to have the same value
          * `var a = new Number(1);  new Object(a) === new Object(a) // true` each returns the object `a`
-      * Object.freeze
+      * `Object.freeze()`
          * `var a = {p:1}; Object.freeze(a)` - `p` cannot be modified or extended 
-      * Object.preventExtensions
+      * `Object.preventExtensions()`
          * `var a = {p:1}; Object.preventExtensions(a)` - `p` can be changed but `q` can't be added
       * Object creation by copying (shallow clone) an object (not prototypal inheritance)
          * `var b = Object.assign({}, a)` copies own properties from `a` to target and returns the target
@@ -127,7 +127,7 @@ npm link babel-cli
 
 * comma operator
    * `for (var i = 0, j = 9; i <= j; i++, j--){}`
-* delete operator
+* `delete` operator
    * `var obj = {a:1};  delete obj.a;`
 * void operator
    * `void(0)`
