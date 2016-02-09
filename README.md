@@ -219,7 +219,7 @@ npm link babel-cli
    * `a.length // 2`
    * `a.length = 5 // -> [1, 2, , , ]`
    * `a.length = 1 // -> [1]`
-* The '`arguments`' object of a regular function is an 'array-like' object that prints '{}'. 
+* The `arguments` object of a regular function is an 'array-like' object that prints '{}'. 
    * It can be converted to a proper array with `Array.from(arguments)` (es6)
    * `Array.slice(arguments,0)` (es5) also works but is not recommended
       * (via MDN) "You should not slice on arguments because it prevents optimizations in JavaScript engines (V8 for example)"
