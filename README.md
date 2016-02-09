@@ -180,7 +180,7 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
    * `var a = {}`
    * `Object.defineProperty(a, 'p', {configurable:true, enumerable:true, writable:true}) // {p: undefined}`
    * `Object.defineProperty(a, 'p', {configurable:true, enumerable:true, value:'val'}) // {p: 'val'}`
-   * by default, the prop will be immutable and not enumerable (excluded from `for...in` loop and `Object.keys()`
+   * by default, the prop will be immutable and not enumerable (excluded from `for...in` loop and `Object.keys()`)
       * `Object.defineProperty(a, 'p', {}) // immutable`
 * object property enumeration
    * `for...in` loops over all own enumerable properties and in prototype chain
