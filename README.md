@@ -398,7 +398,7 @@ babel-node code/functions.js
 * [postman commandline](https://github.com/postmanlabs/newman/)
 * [grunt gulp](http://blog.keithcirkel.co.uk/why-we-should-stop-using-grunt/)
 
-## `good articles, sites`
+## `good articles, videos, sites`
 
 * [10 Interview Questions Every Javascript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95#.24qhy21h7) - by Eric Elliott
 * [The javascript job market](https://medium.com/javascript-scene/forget-the-click-bait-here-s-what-the-javascript-job-market-really-looks-like-in-2016-ddfe0d39b467#.qayjac9w2)
@@ -407,7 +407,7 @@ babel-node code/functions.js
 * [Job search technical interviewing](http://robertheaton.com/2014/03/07/lessons-from-a-silicon-valley-job-search/)
 * [Intervews: CS/Algos vs engineering - Hacker News](http://robertheaton.com/2014/03/07/lessons-from-a-silicon-valley-job-search/)
 * [Interview process at Stripe](https://www.quora.com/What-is-the-engineering-interview-process-like-at-Stripe)
-
+* [Inside V8 with Lars Bak](https://channel9.msdn.com/Shows/Going+Deep/Expert-to-Expert-Erik-Meijer-and-Lars-Bak-Inside-V8-A-Javascript-Virtual-Machine)
 
 ## `misc fun random`
 
