@@ -45,7 +45,7 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
 
 See [Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
 
-Highlights:
+_Highlights_:
 
 * if a construct is not optimizable, the entire containing function becomes unoptimized
    * this is true even if the code is unreachable
