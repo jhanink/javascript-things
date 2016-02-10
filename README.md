@@ -75,7 +75,7 @@ Highlights:
    * this includes objects containing a property that is an `array index` (a.k.a. an element)
       * never use `for...in` with an `Array`
       * `function() { var a=[1,2]; for (var i in a) {} }` will not be optimized
-      * if necessary, `Object.keys(a)` with a regular `for` loop
+      * if necessary, use `Object.keys(a)` with a regular `for` loop
 * `hash table mode`
    * when re-structuring an object
       * don't use `delete`
