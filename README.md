@@ -397,7 +397,7 @@ babel-node code/functions.js
 * [most starred github projects](https://github.com/search?q=stars:%3E1&s=stars&type=Repositories)
 * [javascript framework resources](https://github.com/vhf/free-programming-books/blob/master/javascript-frameworks-resources.md) - 50k github stars
 * [postman commandline](https://github.com/postmanlabs/newman/)
-* [grunt gulp](http://blog.keithcirkel.co.uk/why-we-should-stop-using-grunt/)
+* [v8 optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
 
 ## `good articles, videos, sites`
 
@@ -409,6 +409,8 @@ babel-node code/functions.js
 * [Intervews: CS/Algos vs engineering - Hacker News](http://robertheaton.com/2014/03/07/lessons-from-a-silicon-valley-job-search/)
 * [Interview process at Stripe](https://www.quora.com/What-is-the-engineering-interview-process-like-at-Stripe)
 * [Inside V8 with Lars Bak](https://channel9.msdn.com/Shows/Going+Deep/Expert-to-Expert-Erik-Meijer-and-Lars-Bak-Inside-V8-A-Javascript-Virtual-Machine)
+* [grunt, gulp, webpack](http://blog.keithcirkel.co.uk/why-we-should-stop-using-grunt/)
+
 
 ## `misc fun random`
 
