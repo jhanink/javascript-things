@@ -77,12 +77,16 @@ Highlights:
       * `function() { var a=[1,2]; for (var i in a) {} }` will not be optimized
       * if necessary, `Object.keys(a)` with a regular `for` loop
 * `hash table mode`
-   * when dynamically adding too many properties (outside a constructor or literal assignment)
-   * when using `delete`
+   * when re-structuring an object
+      * don't use `delete`
+         * prefer assignment to `undefined`
+      * don't dynamically add properties after initialization
+         * prefer a predefined structure via constructor or object literal assignment
    * when using properties that aren't `valid identifiers`
       * e.g. `{'-': 3}`
    * when an object has `enumerable properties` in its `prototype chain`
       * e.g. `Object.prototype.fn = function() {}` 
+      * e.g. `myObj.__proto__.x`
 
 ## `variables`
 
