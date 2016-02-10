@@ -52,7 +52,8 @@ Highlights:
    * if necessary, isolate such code to a minimal function
 * currently not optimizable
    * functions with `try{} catch{}` or `try{} finally{}`
-   * functions containing object literal having `__protot__`
+   * functions containing object literal having `.__proto__`
+      * e.g. with es6 object literal initializers
    * functions containing object literal having `get` or `set` properties
    * functions with `eval()`
    * functions with `with() {}`
