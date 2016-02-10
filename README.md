@@ -411,8 +411,6 @@ babel-node code/functions.js
 
 ## `js concepts`
 
-* *Exemplar Prototypes*
-   * Used for flexible cloning as a means of "concatenative inheritance" instead of rigid class libraries
 * *Functional Programming*
    * Pure functions - idempotent, free of side effects, avoids shared/mutable data
    * First class functions - first class citizens and can be passed around
@@ -421,8 +419,12 @@ babel-node code/functions.js
 * *Prototypal Inheritance*
    * Favors delegation/composition over class inheritance
    * Instances inherit directly from other objects (OLOO - objects linked to other objects)
-   * Supports "selective" or "concatenative" inheritance (mixin composition from many objects)
-      * see [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+   * Achieved using function constructors with `new` or via `Object.create(somePrototype)`
+* *Concatenative (or Selective) inheritance*
+   * Mixin composition from one of more source objects
+   * See [Object.assign()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+* *Exemplar Prototypes*
+   * Used for flexible cloning as a means of "concatenative inheritance" instead of rigid class libraries
 
 ## `general concepts`
 
