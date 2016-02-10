@@ -86,7 +86,6 @@ Highlights:
       * e.g. `{'-': 3}`
    * when an object has `enumerable properties` in its `prototype chain`
       * e.g. `Object.prototype.fn = function() {}` 
-      * e.g. `myObj.__proto__.x`
 
 ## `variables`
 
