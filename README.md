@@ -62,7 +62,8 @@ Highlights:
    * `arguments` object must not be __leaked__ OR __passed__
       * `() => arguments`
       * `[].slice.call(arguments)`
-      * Only use `arguments` with `.length` or `[i]` where `i` is an indexed property
+      * Only use `arguments` with `.length` or `[i]` where `i` is a valid interger index into `arguments`
+         * i.e. index cannot be out of bounds
       * `fn.apply(y, arguments` is a special case and is OK
 * `for...in` with 'non-local' key
    * the referenced 'key' must be a 'pure local variable'
