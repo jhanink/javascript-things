@@ -49,7 +49,7 @@ _Highlights_:
 * if a construct is not optimizable, the entire containing function becomes unoptimized
    * this is true even if the code is unreachable
    * if necessary, isolate such code to a minimal function
-* currently not optimizable
+* currently not optimizable (in the major vms)
    * functions with `try{} catch{}` or `try{} finally{}`
    * functions containing object literal having `.__proto__`
       * e.g. as might be done with es6 object literal initializers
@@ -439,7 +439,7 @@ babel-node code/functions.js
    * Utilizes synthetic events to allow event listeners to run without incurring the cost of browser event propagation
    * Conceptually similar to double-buffering in game programming 
 
-## `great git projects`
+## `useful git projects`
 
 * [es6 features](https://github.com/lukehoban/es6features)
 * [es6 equivalents in es5](https://github.com/addyosmani/es6-equivalents-in-es5)
@@ -450,7 +450,7 @@ babel-node code/functions.js
 * [postman commandline](https://github.com/postmanlabs/newman/)
 * [v8 optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
 
-## `good articles, videos, sites`
+## `helpful articles, videos, sites`
 
 * [10 Interview Questions Every Javascript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95#.24qhy21h7) - by Eric Elliott
 * [The javascript job market](https://medium.com/javascript-scene/forget-the-click-bait-here-s-what-the-javascript-job-market-really-looks-like-in-2016-ddfe0d39b467#.qayjac9w2)
