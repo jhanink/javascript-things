@@ -41,6 +41,47 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
    * `JScript`, used in IE with the `Trident` layout engine
    * `Rhino`, used in Java
 
+## `vm optimization penalties`
+
+see [optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
+
+Highlights:
+
+* if a construct is not optimizable, the entire containing function becomes unoptimized
+   * this is true even if the code is unreachable
+   * if necessary, isolate such code to a minimal function
+* currently not optimizable
+   * functions with `try{} catch{}` or `try{} finally{}`
+   * functions containing object literal having `__protot__`
+   * functions containing object literal having `get` or `set` properties
+   * functions with `eval()`
+   * functions with `with() {}`
+   * functions containing `debugger`
+* leaking `arguments`
+   * `arguments` object must not be __leaked__ OR __passed__
+      * `() => arguments`
+      * `[].slice.call(arguments)`
+      * Only use `arguments` with `.length` or `[i]` where `i` is an indexed property
+      * `fn.apply(y, arguments` is a special case and is OK
+* `for...in` with 'non-local' key
+   * the referenced 'key' must be a 'pure local variable'
+      * don't do `var key; var f=(obj)=>{for (key in obj)}`
+      * don't do `var f=(obj)=>{for (var key in obj){}; return ()=>key;}`
+* iterating over non `simple enumerable` objects
+   * non `simple enumerable` is one using properties that aren't valid identifiers
+   * this results in `hash table mode` or `dictionary mode`, backed by a hash table
+   * this includes objects containing a property that is an `array index` (a.k.a. an element)
+      * never use `for...in` with an `Array`
+      * `function() { var a=[1,2]; for (var i in a) {} }` will not be optimized
+      * instead, use `Object.keys(a)` and use a regular `for` loop
+* `hash table mode`
+   * when dynamically adding too many properties (outside a constructor or literal assignment)
+   * when using `delete`
+   * when using properties that aren't `valid identifiers`
+      * e.g. `{'-': 3}`
+   * when an object has `enumerable properties` in its `prototype chain`
+      * e.g. `Object.prototype.fn = function() {}` 
+
 ## `variables`
 
 * variables are "loosely typed", not "statically typed"
@@ -168,6 +209,12 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
 
 ## `objects`
 
+* an object literal is an `Object`
+   * `var a = {}` is a shortcut for the constructor function `var a = new Object()`
+   * `{}.__proto__ === Object.prototype // true`
+   * `{}.constructor.prototype === Object.prototype // true`
+   * whereas `Object.create(null)` inherites from nothing
+   * `Object.create(null).__proto__ // -> undefined`
 * consider properties to be like variables attached to an object
    * a property can be an identifier, string literal, or a number
    * a property that is not a valid identifier can only be accessed via bracket notation
