@@ -53,7 +53,7 @@ Highlights:
 * currently not optimizable
    * functions with `try{} catch{}` or `try{} finally{}`
    * functions containing object literal having `.__proto__`
-      * e.g. with es6 object literal initializers
+      * e.g. as might be done with es6 object literal initializers
    * functions containing object literal having `get` or `set` properties
    * functions with `eval()`
    * functions with `with() {}`
