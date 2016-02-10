@@ -41,7 +41,7 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
    * `JScript`, used in IE with the `Trident` layout engine
    * `Rhino`, used in Java
 
-## `vm optimization penalties`
+## `intro: vm optimization penalties`
 
 see [optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
 
