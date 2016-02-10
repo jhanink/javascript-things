@@ -43,7 +43,7 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
 
 ## `intro: vm optimization penalties`
 
-see [optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
+See [Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
 
 Highlights:
 
