@@ -162,7 +162,7 @@ _Highlights_:
          * `charAt`, `indexOf`, `concat`, `split`, `slice`, `substring`, `toLowerCase`, `startsWith`, `trim`
          * regex: `match`, `replace`, `search`
    * `Array`, `Function`, `Object`, `RegExp`
-      * An instance of Array is a regular object integer key properties that have a relationship to its `length` property
+      * An instance of Array is a regular object having integer key properties that have a relationship to its `length` property
          * the integer key properties act as a numbered index
       * `Array` type checking
          * `var arr = []`
