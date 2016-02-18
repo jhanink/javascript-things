@@ -53,7 +53,7 @@ _Highlights_:
    * functions with `try{} catch{}` or `try{} finally{}`
    * functions containing object literal having `.__proto__`
       * e.g. as might be done with es6 object literal initializers
-   * functions containing object literal having `get` or `set` properties
+   * functions containing object literals having `get` or `set` properties
    * functions with `eval()`
    * functions with `with() {}`
    * functions containing `debugger`
@@ -61,7 +61,7 @@ _Highlights_:
    * `arguments` object must not be __leaked__ OR __passed__
       * `() => arguments`
       * `[].slice.call(arguments)`
-      * Only use `arguments` with `.length` or `[i]` where `i` is a valid interger index into `arguments`
+      * Only use `arguments` with `.length` or `[i]` where `i` is a valid integer index into `arguments`
          * i.e. index cannot be out of bounds
       * `fn.apply(y, arguments` is a special case and is OK
 * `for...in` with 'non-local' key
