@@ -395,6 +395,7 @@ babel-node code/functions.js
    * ``var t = `the number is ${num}` ``
 * Promises
   * `var p = new Promise(function (resolve,reject){ if (success) resolve(data) else reject(reason) });`
+  * [jsbin XMLHttpRequest example](http://jsbin.com/yekodug/edit?html,js,console)
   * [MDN reference and examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 ## `code examples`
