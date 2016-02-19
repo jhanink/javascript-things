@@ -393,6 +393,9 @@ babel-node code/functions.js
    * string literals with embedded expressions
    * `var num = 22`
    * ``var t = `the number is ${num}` ``
+* Promises
+  * `var p = new Promise(function (resolve,reject){ if (success) resolve(data) else reject(reason) });`
+  * [MDN reference and examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 ## `code examples`
 
