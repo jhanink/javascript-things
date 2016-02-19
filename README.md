@@ -209,7 +209,7 @@ _Highlights_:
    * `void(0)`
 * spread operator
    * `var a=[1,2,3]; var b=[0, ...a] // b: [0,1,2,3]`
-   * `var f = (x,y,z) => a+b;  f(...a); // calls f(1,2,3)`
+   * `var f = (x,y,z) => x + y + z;  f(...a); // calls f(1,2,3) --> returns 6`
 
 ## `objects`
 
@@ -397,6 +397,11 @@ babel-node code/functions.js
   * `var p = new Promise(function (resolve,reject){ if (success) resolve(data) else reject(reason) });`
   * [jsbin XMLHttpRequest example](http://jsbin.com/yekodug/edit?html,js,console)
   * [MDN reference and examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+* destructuring
+  * Given: `var arr = [1,2,3];`
+  * Then - `var { el1, el2 } = arr;` is equivalent to `var el1=arr[0], el2=arr[1];`
+  * Given: `var obj = {p:1, q:2, r:3};`
+  * Then - `var { p, q } = obj;` is equivalent to `var p=obj.p, q=obj.q;`
 
 ## `code examples`
 
