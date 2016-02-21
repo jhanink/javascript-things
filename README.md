@@ -402,6 +402,17 @@ babel-node code/functions.js
   * Then - `var { el1, el2 } = arr;` is equivalent to `var el1=arr[0], el2=arr[1];`
   * Given: `var obj = {p:1, q:2, r:3};`
   * Then - `var { p, q } = obj;` is equivalent to `var p=obj.p, q=obj.q;`
+* `setTimeout` vs `setInterval`
+  * `setTimeout`
+    * will be called after some specified delay
+    * a blocking operation can further delay the execution
+    * a nested setTimeout will occur in `delay + block + execution + delay + block`
+    * the calls do not 'stack up'
+    * there won't be a flurry of calls
+  * `setInterval`
+    * will be queued every `n` milliseconds
+    * intermediate blocking operations can cause calls to 'stack up'
+    * there can be a flurry of queued calls
 
 ## `code examples`
 
