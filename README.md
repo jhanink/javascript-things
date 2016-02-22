@@ -408,11 +408,14 @@ babel-node code/functions.js
     * a blocking operation can further delay the execution
     * a nested setTimeout will occur in `delay + block + execution + delay + block`
     * the calls do not 'stack up'
-    * there won't be a flurry of calls
+    * there will not be a flurry of calls
   * `setInterval`
     * will be queued every `n` milliseconds
-    * intermediate blocking operations can cause calls to 'stack up'
-    * there can be a flurry of queued calls
+    * a blocking operation that spans multiple intervals will enqueue at most 1 call
+    * the delay between calls is not guaranteed
+      * if a call is queued, it may execute near the next scheduled call
+      * it could be more or less than the specified delay
+    * there will not be a "flurry" of calls
 
 ## `code examples`
 
