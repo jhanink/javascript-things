@@ -239,6 +239,10 @@ _Highlights_:
    * use `obj.hasOwnProperty(key)` to check for only own properties
    * `Object.keys(obj)` array of all own (not in prototype chain) enumerable property names 
    * `Object.getOwnPropertyNames(obj)` array of all own property names (both enumerable and not)
+* get object property descriptors
+   * to determine `configurable`, `enumerable`, `writable`, `value`
+   * `Object.getOwnPropertyDescriptor(obj, prop)`
+   * [See this jsbin](http://jsbin.com/zazuzi/edit?js,console)
 * create an object of a given type without a constructor function
    * `var Phone = {brand:"generic", getBrand: function() {console.log(this.brand)}}`
    * `var iphone = Object.create(Phone);`
