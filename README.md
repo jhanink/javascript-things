@@ -441,7 +441,9 @@ babel-node code/functions.js
 
 * use event delegation, e.g. `$(document).on( "click", "#selector", function() {});`
 * interesting difference in the treatment of an implicit vs explicit variable on the global object
-  * `var a=1`, `b=1`, `window.c=1` [See the jsbin](http://jsbin.com/zazuzi/edit?js,console)
+  * `var a=1`, `b=1`, `window.c=1`
+  * `a` is not __configurable__ - i.e. cannot be `delete`d from the global object
+  * [See this jsbin](http://jsbin.com/zazuzi/edit?js,console)
 
 ## `js concepts`
 
