@@ -282,6 +282,9 @@ _Highlights_:
       * `var a = [10,,20,,30,40]`
       * `[...a.keys()] // -> [0,1,2,3,4,5]`
       * `Object.keys() // -> [0,2,4,5]`
+   * `Array.forEach()` visits each __element__ in the array, as opposed to each __index__.
+      * `var a = [10,,20]`
+      * will visit `a[0]` and `a[2]`, as there is no member a `a[1]`
    * Check if an object is an array
       * `Array.isArray(obj)`
       * `obj instanceof Array`
