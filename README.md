@@ -403,6 +403,12 @@ babel-node code/functions.js
    * string literals with embedded expressions
    * `var num = 22`
    * ``var t = `the number is ${num}` ``
+* `let` and __Temporal Dead Zone__
+   * `console.log(foo)`
+   * `let foo=1`
+   * `foo` is hoisted to the top of its scope, but it is unrecognized until the declaration
+      * the above will throw a `ReferenceError`
+      * the region between the hoisted position and the declaration is known as a `TDZ` or __Temporal Dead Zone__
 * Promises
   * `var p = new Promise(function (resolve,reject){ if (success) resolve(data) else reject(reason) });`
   * [jsbin XMLHttpRequest example](http://jsbin.com/yekodug/edit?html,js,console)
