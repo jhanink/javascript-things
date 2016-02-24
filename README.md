@@ -204,6 +204,7 @@ _Highlights_:
    * `for (var i = 0, j = 9; i <= j; i++, j--){}`
 * `delete` operator
    * `var obj = {a:1};  delete obj.a;`
+   * [See delete on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)
    * NOTE: `delete` has a [degenerative v8 optimization penalty](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers#521-objects-that-are-in-hash-table-mode-aka-normalized-objects-dictionary-mode---objects-who-have-a-hash-table-as-a-backing-data-structure-are-not-simple-enumerables)
 * void operator
    * `void(0)`
