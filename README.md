@@ -308,7 +308,10 @@ _Highlights_:
    * It can be converted to a proper array with `Array.from(arguments)` (es6)
    * `Array.slice(arguments,0)` (es5) also works but is not recommended
       * (via MDN) "You should not slice on arguments because it prevents optimizations in JavaScript engines (V8 for example)"
-* An array-like object is an iterable object; e.g. `{ '0': 10, '1': 20 }` and has a `.length` property
+* An __array-like__ object is an iterable object
+   * `var a = { '0': 10, '1': 20, 'length': 2 }` has a `.length` property
+   * this can be converted to a proper Array `Array.from(a) // -> [10, 20]`
+   * without a `.length` property, it will return an empty Array.
 * Array prototype methods may alter or create. '`shift`' alters, whereas '`slice`' creates.
    * some methods that return a new array
       * `.concat()`, `.slice()`, `.filter()`, `.map()`, `.reduce()`
