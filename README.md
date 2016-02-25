@@ -507,6 +507,7 @@ babel-node code/functions.js
 * [Interview process at Stripe](https://www.quora.com/What-is-the-engineering-interview-process-like-at-Stripe)
 * [Inside V8 with Lars Bak](https://channel9.msdn.com/Shows/Going+Deep/Expert-to-Expert-Erik-Meijer-and-Lars-Bak-Inside-V8-A-Javascript-Virtual-Machine)
 * [grunt, gulp, webpack](http://blog.keithcirkel.co.uk/why-we-should-stop-using-grunt/)
+* [javascript the core, by Dmitry Soshkinov](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/)
 
 
 ## `misc fun random`
