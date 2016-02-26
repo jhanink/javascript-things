@@ -433,6 +433,9 @@ babel-node code/functions.js
       * it could be more or less than the specified delay
     * there will not be a "flurry" of calls
 
+## `language core, internals, abstract`
+
+
 ## `code examples`
 
 * flatten an array using recursive reduce `babel-node code/reduce.js`
