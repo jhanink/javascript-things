@@ -450,7 +450,7 @@ babel-node code/functions.js
 ## `misc`
 
 * use event delegation, e.g. `$(document).on( "click", "#selector", function() {});`
-* interesting difference in the treatment of an implicit vs explicit variable on the global object
+* interesting difference in the treatment of an explicit vs implicit variable on the global object
   * `var a=1`, `b=1`, `window.c=1`
   * all three will add a property to the global window object
   * only `a` is not __configurable__ - i.e. does not allow `delete` from the global object
