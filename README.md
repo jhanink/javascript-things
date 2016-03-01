@@ -153,7 +153,7 @@ _Highlights_:
          * `typeof String === 'function' // true`
          * `typeof Boolean === 'function' // true`
          * `typeof Array === 'function' // true`
-   * note that object prototypal "inheritance" is really OLOO (objects linking to other objects)
+   * note that object prototypal "inheritance" is delegative OLOO (objects linking to other objects)
       * `({}).__proto__ === Object.prototype // true`
 * built-in objects
    * `String`, `Number`, `Boolean`
@@ -249,6 +249,7 @@ _Highlights_:
    * `var iphone = Object.create(Phone);`
    * `iphone.brand = "iphone"`
    * `iphone.getBrand() // iphone`
+   * [jsbin example]{http://jsbin.com/jiruva/1/edit?js,console}
 * getters and setters
    * `var a = {a: 1, get propA() {return this.a}, set propA(x) {this.a = x}}`
    * `a.a // 1`
