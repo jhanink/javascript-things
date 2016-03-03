@@ -435,7 +435,7 @@ babel-node code/functions.js
     * there will not be a "flurry" of calls
 
 ## `language core, internals, abstract`
-
+* Execution context, Variable object, Activation object
 
 ## `code examples`
 
