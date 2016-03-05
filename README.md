@@ -348,8 +348,9 @@ babel-node code/arrow-functions.js
 ```
 
 ## `functions`
-
-* Use default params to change the 'arity' of a function for partial application (and function currying)
+* Function currying reduces the 'arity' of a function into an invocation chain of unary functions
+* Partial application reduces the 'arity' of a function by binding (applying) some parameter values
+* Use default params to change the 'arity' of a function for partial application
    * Use `Function.prototype.bind` to define leading args (es5)
       * `var f = function (a,b,c) {return a+b+c}`
       * `var g = f.bind(null,1,2)`
@@ -357,6 +358,11 @@ babel-node code/arrow-functions.js
       * or use a fat arrow to create an unary function
       * `var g = c => f(1,2,c);`
    * Use default trailing parameters (es6)
+* example of currying
+  * `var f = function(x,y) {return x+y}`
+  * `var g = function(x) { return function(y) {return x+y}}`
+  * `f(2,3) // -> 5`
+  * `g(2)(3) // -> 5`
 
 ```
 babel-node code/functions.js
