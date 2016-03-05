@@ -351,7 +351,11 @@ babel-node code/arrow-functions.js
 
 * Use default params to change the 'arity' of a function for partial application (and function currying)
    * Use `Function.prototype.bind` to define leading args (es5)
-      * `var f = function (a,b,c) {console.log(arguments)}`, `f.bind(null,1,2)(999)`
+      * `var f = function (a,b,c) {return a+b+c}`
+      * `var g = f.bind(null,1,2)`
+      * `g(3); // returns 6`
+      * or use a fat arrow to create an unary function
+      * `var g = c => f(1,2,c);`
    * Use default trailing parameters (es6)
 
 ```
