@@ -483,6 +483,7 @@ boy.getName(); // -> "Jack Jr."
 
 * use event delegation, e.g. `$(document).on( "click", "#selector", function() {});`
 * interesting difference in the treatment of an explicit vs implicit variable on the global object
+
 ```javascript
   var a=1;
   b=1;
