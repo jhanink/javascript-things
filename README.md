@@ -348,6 +348,11 @@ babel-node code/arrow-functions.js
 ```
 
 ## `functions`
+* Function declaration vs function expression
+  * A function declaration gets added to the execution context's 'variable object'
+    * In the global context, `function f() {}; "f" in window // -> true`
+  * A function expression is evaluated inline
+    * `(function f() {}); "f" in window // -> false`
 * Function currying reduces the 'arity' of a function into an invocation chain of unary functions
 * Partial application reduces the 'arity' of a function by binding (applying) some parameter values
 * Use default params to change the 'arity' of a function for partial application
@@ -466,7 +471,10 @@ boy.getName(); // -> "Jack Jr."
     * there will not be a "flurry" of calls
 
 ## `language core, internals, abstract`
-* Execution context, Variable object, Activation object
+* Execution context (EC), Variable object, Activation object
+  * An EC is a collection of state data
+  * An EC can be any of "Global EC", "Function EC", "Eval EC"
+  * An EC is ordered on a stack, with the "Global EC" at the bottom and some "Active EC" on the top 
 
 ## `code examples`
 
