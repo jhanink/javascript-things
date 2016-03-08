@@ -370,7 +370,28 @@ babel-node code/functions.js
 
 ## `prototype, function constructor`
 
-* a class is an abstract definition used to "instantiate" or "realize" a concrete object
+* a traditional class is an abstract definition used to "instantiate" or "realize" a concrete object
+* an es6 class is syntactic sugar over the prototype model
+```javascript
+class Father {
+  constructor(name) {
+    this.name = name;
+  }
+  getName() {
+    return this.name;
+  }
+}
+
+class Son extends Father {
+  getName() {
+    return super.getName() + " Jr.";
+  }
+}
+
+var boy = new Son("Jack");
+
+boy.getName(); // -> "Jack Jr."
+```
 * a prototype is an existing object that acts as a template to initialize a new object
    * `var P = function() {this.test = 500}`
    * `var b = new P()`
