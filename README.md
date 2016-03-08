@@ -489,6 +489,7 @@ boy.getName(); // -> "Jack Jr."
   b=1;
   window.c=1;
 ```
+* for the above
   * all three will add a property to the global window object
   * but `a` is not __configurable__ - i.e. does not allow `delete` from the global object
   * [See this jsbin](http://jsbin.com/zazuzi/edit?js,console)
