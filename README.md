@@ -200,6 +200,9 @@ _Highlights_:
 
 ## `operators`
 
+* in operator
+  * `x in obj` checks if `x` is a property of `obj`, regardless of the enumerable flag
+  * `for (var x in obj)` gets only enumerable properties (own and inherited)
 * comma operator
    * `for (var i = 0, j = 9; i <= j; i++, j--){}`
 * `delete` operator
@@ -240,6 +243,8 @@ _Highlights_:
    * use `obj.hasOwnProperty(key)` to check for only own properties
    * `Object.keys(obj)` array of all own (not in prototype chain) enumerable property names 
    * `Object.getOwnPropertyNames(obj)` array of all own property names (both enumerable and not)
+   * note that while `for (var x in obj)` gets only enumerable properties
+     * `x in obj` simply checks if `x` is a property of obj, regardless of the enumerable flag
 * get object property descriptors
    * to determine `configurable`, `enumerable`, `writable`, `value`
    * `Object.getOwnPropertyDescriptor(obj, prop)`
@@ -480,19 +485,19 @@ boy.getName(); // -> "Jack Jr."
     * __scope chain__ - Variable object + parent scopes
     * __this value__ - Context object
 * __Variable object__
-  * contains variables, function declarations, and function arguments
+  * contains variables, function declarations
   * in the browser global execution context, the __Variable object__ is the global `window` object
-  * when a function is called (__activated__), an object, known as an __Activation object__ is created
+  * in a function call (activation), an object, known as an __Activation object__ is created
     * the __Activation object__ is used as the __Variable object__ for the function context
-    * and also stores the __formal parameters__ and `arguments` object
-  * __Scope chain__
-    * like a __prototype chain__, a __scope chain__ is a chain of scope objects
-    * in an execution context, the __Scope object__ is the __Variable object__
-    * resolving a variable starts in the __own scope__ (Variable/Activation object)
-    * lookup continues up the chain of parent variable objects, ending at the global scope
-    * __free variables__ (non-local variables) require scope chain lookup
-    * a scope chain is the set of own and parent __Variable objects__ plus anything dynamically added to scope (such as __with objects__)
-    * since a scope chain consists of a stack of scope objects, a variable lookup implies a prototype chain search for each scope link
+    * it is a Variable object augmented with the function's __formal parameters__ and `arguments` object
+* __Scope chain__
+  * like a __prototype chain__, a __scope chain__ is a chain of scope objects
+  * in an execution context, the __Scope object__ is the __Variable object__
+  * resolving a variable starts in the __own scope__ (Variable/Activation object)
+  * lookup continues up the chain of parent variable objects, ending at the global scope
+  * __free variables__ (non-local variables) require scope chain lookup
+  * a scope chain is the set of own and parent __Variable objects__ plus anything dynamically added to scope (such as __with objects__)
+  * since a scope chain consists of a stack of scope objects, a variable lookup implies a prototype chain search for each scope link
       
 __See Below:__
 * in the `with` block, local scope is that of `{}`
@@ -501,6 +506,7 @@ __See Below:__
   * the search for `x` does not proceed up the scope chain where `x` has the value `100`
   * a scope search exhausts the local scope object's prototype chain before proceeding along the scope chain
   * a scope search does a `__proto__` lookup before a `__parent__` lookup
+  * this behavior is logical, since a scope property lookup is equivalent to `x in {}`
 ```javascript
 // the 2-dimensional prototype and scope chain lookup
 // can lead to unexpected behavior outside of strict mode
