@@ -510,8 +510,7 @@ var x = 100; // top of scope chain
 with ({}) {
   console.log(x); // prints 10, not 100
 }
-
-
+console.log(x); // prints 100, not 10
 ```
 
 ## `code examples`
