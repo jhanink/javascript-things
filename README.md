@@ -496,11 +496,10 @@ boy.getName(); // -> "Jack Jr."
       
 __See Below:__
 * in the `with` block, local scope is that of `{}`
-* `x` is not found in that local scope
-* `x` is sought up the prototype chain and is found at `Object.prototype`
-* the search for `x` does not proceed up the scope chain where `x` has the value `100`
-* a scope search exhausts the local scope object's prototype chain before proceeding along the scope chain
-
+  * `x` is not found in that local scope
+  * `x` is sought up the prototype chain and is found at `Object.prototype`
+  * the search for `x` does not proceed up the scope chain where `x` has the value `100`
+  * a scope search exhausts the local scope object's prototype chain before proceeding along the scope chain
 ```javascript
 // the 2-dimensional prototype and scope chain lookup
 // can lead to unexpected behavior outside of strict mode
