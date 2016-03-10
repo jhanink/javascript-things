@@ -506,7 +506,6 @@ __See Below:__
   * the search for `x` does not proceed up the scope chain where `x` has the value `100`
   * a scope search exhausts the local scope object's prototype chain before proceeding along the scope chain
   * a scope search does a `__proto__` lookup before a `__parent__` lookup
-  * this behavior is logical, since a scope property lookup is equivalent to `x in {}`
 ```javascript
 // the 2-dimensional prototype and scope chain lookup
 // can lead to unexpected behavior outside of strict mode
