@@ -470,11 +470,49 @@ boy.getName(); // -> "Jack Jr."
       * it could be more or less than the specified delay
     * there will not be a "flurry" of calls
 
-## `language core, internals, abstract`
-* Execution context (EC), Variable object, Activation object
-  * An EC is a collection of state data
-  * An EC can be any of "Global EC", "Function EC", "Eval EC"
-  * An EC is ordered on a stack, with the "Global EC" at the bottom and some "Active EC" on the top 
+## `language core, internals`
+* __Execution context__
+  * an object used to track progress of the associated code
+  * can be __global ec__, __function ec__, __eval ec__
+  * maintained on a stack, with the "global ec" at the bottom and the "active ec" at the top 
+  * an execution context contains
+    * __variable object__ - vars, function decl, args
+    * __scope chain__ - Variable object + parent scopes
+    * __this value__ - Context object
+* __Variable object__
+  * contains variables, function declarations, and function arguments
+  * in the browser global execution context, the __Variable object__ is the global `window` object
+  * when a function is called (__activated__), an object, known as an __Activation object__ is created
+    * the __Activation object__ is used as the __Variable object__ for the function context
+    * and also stores the __formal parameters__ and `arguments` object
+  * __Scope chain__
+    * like a __prototype chain__, a __scope chain__ is a chain of scope objects
+    * in an execution context, the __Scope object__ is the __Variable object__
+    * resolving a variable starts in the __own scope__ (Variable/Activation object)
+    * lookup continues up the chain of parent variable objects, ending at the global scope
+    * __free variables__ (non-local variables) require scope chain lookup
+    * a scope chain is the set of own and parent __Variable objects__ plus anything dynamically added to scope (such as __with objects__)
+    * since a scope chain consists of a stack of scope objects, a variable lookup implies a prototype chain search for each scope link
+      
+__See Below:__
+* in the `with` block, local scope is that of `{}`
+* `x` is not found in that local scope
+* `x` is sought up the prototype chain and is found at `Object.prototype`
+* the search for `x` does not proceed up the scope chain where `x` has the value `100`
+* a scope search exhausts the local scope object's prototype chain before proceeding along the scope chain
+
+```javascript
+// the 2-dimensional prototype and scope chain lookup
+// can lead to unexpected behavior outside of strict mode
+
+Object.prototype.x = 10; // top of prototype chain
+var x = 100; // top of scope chain
+with ({}) {
+  console.log(x); // prints 10, not 100
+}
+
+
+```
 
 ## `code examples`
 
