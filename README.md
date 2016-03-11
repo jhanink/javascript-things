@@ -99,12 +99,14 @@ function outer() {
   a(); // -> "a"
   b(); // -> TypeError: b is not a function
 
-  // function a (declaration and definition) is hoisted
+  // for this function definition,
+  // both declaration and definition are hoisted
   function a() {
     console.log("a");
   }
 
-  // variable b (declaration) is hoisted, but not the value
+  // for this function expression,
+  // only the declaration is hoisted
   var b = function() {
     console.log("b");
   }
