@@ -91,6 +91,9 @@ _Highlights_:
 * variables are *loosely typed*, not *statically typed*
 * variables can be assigned and reassigned to values of different types
 * variable declarations are hoisted to the top of their function scope
+* function declarations (and their definitions) are hoisted
+* function expressions are not hoisted
+
 
 ## `types`
 
