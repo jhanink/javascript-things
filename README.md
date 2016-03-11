@@ -93,7 +93,7 @@ _Highlights_:
 * variable declarations are hoisted to the top of their function scope
 * for function declarations
   * the function declaration and definition are hoisted
-* for __all__variable declarations
+* for __all__ variable declarations
   * the variable declaration is hoisted, but not the assignment
     * this includes function expression definitions
 
