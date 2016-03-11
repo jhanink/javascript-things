@@ -489,7 +489,7 @@ boy.getName(); // -> "Jack Jr."
   * in the browser global execution context, the __Variable object__ is the global `window` object
   * in a function call (activation), an object, known as an __Activation object__ is created
     * the __Activation object__ is used as the __Variable object__ for the function context
-    * it is a Variable object augmented with the function's __formal parameters__ and `arguments` object
+    * it is a __Variable object__ augmented with the function's __formal parameters__ and `arguments` object
 * __Scope chain__
   * like a __prototype chain__, a __scope chain__ is a chain of scope objects
   * in an execution context, the __Scope object__ is the __Variable object__
