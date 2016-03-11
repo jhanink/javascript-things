@@ -106,7 +106,7 @@ function outer() {
   }
 
   // for this function expression,
-  // only the declaration is hoisted
+  // only the variable declaration is hoisted
   var b = function() {
     console.log("b");
   }
