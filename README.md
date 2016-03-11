@@ -496,8 +496,10 @@ boy.getName(); // -> "Jack Jr."
   * resolving a variable starts in the __own scope__ (Variable/Activation object)
   * lookup continues up the chain of parent variable objects, ending at the global scope
   * __free variables__ (non-local variables) require scope chain lookup
-  * a scope chain is the set of own and parent __Variable objects__ plus anything dynamically added to scope (such as __with objects__)
-  * since a scope chain consists of a stack of scope objects, a variable lookup implies a prototype chain search for each scope link
+  * a scope chain is the set of own and parent __Variable objects__
+  * a scope chain consists of linked scope objects
+  * a variable lookup implies a prototype chain search for each scope link
+  * a scope object may include dynamically added material (e.g. __with objects__)
       
 __See Below:__
 * in the `with` block, local scope is that of `{}`
