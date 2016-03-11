@@ -91,21 +91,24 @@ _Highlights_:
 * variables are *loosely typed*, not *statically typed*
 * variables can be assigned and reassigned to values of different types
 * variable declarations are hoisted to the top of their function scope
-* function declarations (and their definitions) are hoisted
-* function expressions are not hoisted
+* for function declarations
+  * the function declaration and definition are hoisted
+* for __all__variable declarations
+  * the variable declaration is hoisted, but not the assignment
+    * this includes function expression definitions
 
 ```javascript
 function outer() {
   a(); // -> "a"
   b(); // -> TypeError: b is not a function
 
-  // for this function definition,
+  // for this function declaration,
   // both declaration and definition are hoisted
   function a() {
     console.log("a");
   }
 
-  // for this function expression,
+  // for this variable declaration,
   // only the variable declaration is hoisted
   var b = function() {
     console.log("b");
