@@ -94,6 +94,22 @@ _Highlights_:
 * function declarations (and their definitions) are hoisted
 * function expressions are not hoisted
 
+```javascript
+function outer() {
+  a(); // -> "a"
+  b(); // -> TypeError: b is not a function
+
+  // function a (declaration and definition) is hoisted
+  function a() {
+    console.log("a");
+  }
+
+  // variable b (declaration) is hoisted, but not the value
+  var b = function() {
+    console.log("b");
+  }
+}
+```
 
 ## `types`
 
