@@ -1,9 +1,7 @@
 # Javascript Things
 
 It's impossible to remember everything, and it's hard to remember everything that's important.
-Maintaining a list of __everything__ isn't very useful, since that's what google, mdn, and stackoverflow are for. 
-
-But I do want to remember __some things__. This is a reference to help me remember, and it may or may not be useful to other persons. 
+Maintaining a list of __everything__ isn't very useful, since that's what google, mdn, and stackoverflow are for. But I do want to remember __some things__. This is a reference to help me remember, and it may or may not be useful to other persons. 
 
 ```
 npm install
