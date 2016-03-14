@@ -542,6 +542,9 @@ with ({}) {
 console.log(x); // prints 100, not 10
 ```
 
+* __Closures__
+  * closures are meant to handle the __funargs__ (functional arguments) problem
+
 ## `code examples`
 
 * flatten an array using recursive reduce `babel-node code/reduce.js`
