@@ -589,12 +589,14 @@ fx(); // -> returns 50
 * __this value__
   * `this` is another property of an execution context
   * it is the __context object__ against which an __execution context__ is __activated__
-  * the value of `this` is determined when entering the context
+  * the value of `this` is determined when entering the execution context
   * in the global execution context, `this` is the __global object__ and so equals the __Variable object__
   * in a function context, the value of `this` depends on how the function is activated/called
-  * if a function is a property of an object and is activated via a method call, then `this` is the owner object
+  * if a function is a property of an owner object and activated via method call, then `this` is the owner object
   * if a function ref is disassociated from any object and then activated, `this` is the global object
-    * unless the function was previously bound to some context object, [Function#bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+    * unless the function was previously bound to some context object
+      * as with [Function#bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+      * or by the implicit binding of an arrow function
 
 ```javascript
 function f() {
