@@ -674,7 +674,7 @@ theArrow(); // -> 10, because the arrow function is innately bound to and thus a
       * Use a single pass O(n) loop storing candidates in a map by key `value2 = target - value1` for lookup matching of subsequent entries
 * *Virtual DOM*
    * Memory structure for staging DOM changes
-   * Performs an efficient before/after diff (a.k.a 'reconciliation' in React)
+   * Performs an efficient before/after diff (a.k.a __reconciliation__ in React)
       * Minimizes expensive DOM updates and thus reduces browser DOM reflow churn
    * Utilizes synthetic events to allow event listeners to run without incurring the cost of browser event propagation
    * Conceptually similar to double-buffering in game programming 
