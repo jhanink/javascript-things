@@ -619,6 +619,8 @@ let theArrow = x.arrow;
 theArrow(); // -> 10, because the arrow function is innately bound to and thus activated against 'context'
 ```
 
+* the __language core__ information was extracted from [Dmitry Soshnikov's javascript blog](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/)
+
 ## `code examples`
 
 * flatten an array using recursive reduce `babel-node code/reduce.js`
