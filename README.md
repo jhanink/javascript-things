@@ -544,6 +544,48 @@ console.log(x); // prints 100, not 10
 
 * __Closures__
   * closures are meant to handle the __funargs__ (functional arguments) problem
+  * there are two flavors of funargs problems, __upward__, and __downward__
+  * __upward__ refers to how free variables are resolved when a function is returned from a function
+    * the inner function saves the parent scope chain __at the time of creation__
+    * this kind of scope is known as __static__ or __lexical__ scope
+  * __downward__ refers to how a function resolves an _ambiguous_ identifier
+    * given a local and global variable, the static scope at the time of function creation is used
+    * this is the same __lexical__ scope behavior as above
+  * a function, together with its saved __static/lexical__ scope chain is the __definition of a closure__
+  * since all functions save lexical scope at creation, all functions are closures
+
+```javascript
+// when a function is created, free variables in its static scope are saved in a closure
+var a = 10;
+
+function f() {
+  return a;
+}
+
+function g() {
+  var a = 100;
+  return f(); 
+}
+
+g(); // -> returns 10
+```
+
+```javascript
+function x() {
+  var b = 50;
+  return function() {
+    return b;
+  }
+}
+
+var fx = f();
+var b = 500;
+fx(); // -> returns 50
+```
+
+* A function has a static/lexical scope chain known and saved at the time of creation/definition
+  * this is used to resolve free variable lookups
+  * the combination of the function and its scope chain form a closure
 
 ## `code examples`
 
