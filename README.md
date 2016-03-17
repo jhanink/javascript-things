@@ -553,9 +553,12 @@ console.log(x); // prints 100, not 10
     * this is the same __lexical__ scope behavior as above
   * a function, together with its saved __static/lexical__ scope chain is the __definition of a closure__
   * since all functions save lexical scope at creation, all functions are closures
+  * a function has a static/lexical scope chain known and saved at the time of creation/definition
+    * this is used to resolve free variable lookups
+    * the combination of the function and its scope chain form a closure
 
 ```javascript
-// when a function is created, free variables in its static scope are saved in a closure
+// when a function is created, the current lexical scope is saved with the closure
 var a = 10;
 
 function f() {
@@ -583,9 +586,36 @@ var b = 500;
 fx(); // -> returns 50
 ```
 
-* A function has a static/lexical scope chain known and saved at the time of creation/definition
-  * this is used to resolve free variable lookups
-  * the combination of the function and its scope chain form a closure
+* __this value__
+  * `this` is another property of an execution context
+  * it is the __context object__ against which an __execution context__ is __activated__
+  * the value of `this` is determined when entering the context
+  * in the global execution context, `this` is the __global object__ and so equals the __Variable object__
+  * in a function context, the value of `this` depends on how the function is activated/called
+  * if a function is a property of an object and is activated via a method call, then `this` is the owner object
+  * if a function ref is disassociated from any object and then activated, `this` is the global object
+    * unless the function was previously bound to some context object, [Function#bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+
+```javascript
+function f() {
+  let context = {
+    val: 10,
+    fn: function() {
+      return () => this.val;
+    }
+  }
+  return context.fn();
+}
+
+let x = {
+  test: 100,
+  arrow: f.fn()
+}
+
+let theArrow = x.arrow;
+
+theArrow(); // -> 10, because the arrow function is innately bound to and thus activated against 'context'
+```
 
 ## `code examples`
 
