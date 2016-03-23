@@ -648,6 +648,8 @@ theArrow(); // -> 10, because the arrow function is innately bound to and thus a
   * [See this jsbin](http://jsbin.com/zazuzi/edit?js,console)
 
 ## `js concepts`
+* *vm turn*
+   * one cycle through the js event loop
 
 * *Functional Programming*
    * Pure functions - idempotent, free of side effects, avoids shared/mutable data
