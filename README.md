@@ -139,12 +139,14 @@ function outer() {
       * `typeof (null) === 'object' // true`
       * `null instanceof Object // false`
       * `null === null // true`
+      * `Number(null) // 0`
    * `undefined` is a special case
       * a "primitive" value that has the formal type of `undefined`
       * it is not an object
       * `typeof(undefined) === 'undefined' // true`
       * `undefined instanceof Object // false`
       * `undefined === undefined // true`
+      * `Number(undefined) // NaN`
    * `NaN` is an especially special case
       * `typeof (NaN) === 'number' // true`
       * `NaN instanceof Number // false`
