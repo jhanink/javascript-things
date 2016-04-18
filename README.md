@@ -479,6 +479,12 @@ boy.getName(); // -> "Jack Jr."
   * `var p = new Promise(function (resolve,reject){ if (success) resolve(data) else reject(reason) });`
   * [jsbin XMLHttpRequest example](http://jsbin.com/yekodug/edit?html,js,console)
   * [MDN reference and examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+* async/await
+  * a function can be marked `async`
+  * the function can then `await` a Promise
+  * the function can be written in synchronous style
+  * the function is still async, so can't return the outcome of the Promise
+  * [codepen async/await](http://codepen.io/jhanink/pen/YqLJmO?editors=0011)
 * destructuring
   * Given: `var arr = [1,2,3];`
   * Then - `var { el1, el2 } = arr;` is equivalent to `var el1=arr[0], el2=arr[1];`
