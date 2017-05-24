@@ -118,7 +118,8 @@ function outer() {
 
 ## `types`
 
-* built-in data types (as returned from `typeof`)
+* built-in basic data types such as String (as returned from `typeof`)
+   * Note: `instanceof` can be used to check constructor types that are not of the basic types
    * `string`, `number`, `boolean`, `null`, `undefined`, `object`, (`function`)
    * `string` is a special case
       * a string literal primitive is not an object
