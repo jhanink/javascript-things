@@ -29,7 +29,7 @@ The _JSON standard_ __can be found__ at [ECMA-404](http://www.ecma-international
    * `es6`, officially `ES2015`, was adopted June 2015
    * `es7`, or `ES2016`, is small and will only contain [2 new features](http://www.2ality.com/2016/01/ecmascript-2016.html)
    * `ES2017` [draft spec](http://www.2ality.com/2016/01/ecmascript-2016.html)
-   * [ecma262 github official](https://tc39.github.io/ecma262/)
+   * [github/tc39/ecma262 official](https://tc39.github.io/ecma262/)
 
 ## `intro: implementations`
 
