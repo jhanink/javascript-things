@@ -488,6 +488,8 @@ boy.getName(); // -> "Jack Jr."
   * the function can be written in synchronous style
   * the function is still async, so can't return the outcome of the Promise
   * [codepen async/await](http://codepen.io/jhanink/pen/YqLJmO?editors=0011)
+* Generators, Iterables, Observables
+  * TBD
 * destructuring
   * Given: `var arr = [1,2,3];`
   * Then - `var { el1, el2 } = arr;` is equivalent to `var el1=arr[0], el2=arr[1];`
