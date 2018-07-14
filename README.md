@@ -595,7 +595,7 @@ function x() {
   }
 }
 
-var fx = x;
+var fx = x();
 var b = 500;
 fx(); // -> returns 50
 ```
