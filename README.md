@@ -581,7 +581,7 @@ function f() {
 
 function g() {
   var a = 100;
-  return f(); 
+  return f();
 }
 
 g(); // -> returns 10
@@ -595,7 +595,7 @@ function x() {
   }
 }
 
-var fx = f();
+var fx = x;
 var b = 500;
 fx(); // -> returns 50
 ```
