@@ -720,5 +720,7 @@ theArrow(); // -> 10, because the arrow function is innately bound to and thus a
 ## `misc fun random`
 
 * *Cognates* - words that have the same etymological origin (from Latin `cognatus`, meaning `blood relative`)
-   * Example - `memoize` & `memorize` 
+   * Example - `memoize` & `memorize`
+
+https://github.com/jhanink/clapi/blob/master/Etymological_Relationships_Tree.png
 
