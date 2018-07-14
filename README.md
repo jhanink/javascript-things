@@ -722,5 +722,5 @@ theArrow(); // -> 10, because the arrow function is innately bound to and thus a
 * *Cognates* - words that have the same etymological origin (from Latin `cognatus`, meaning `blood relative`)
    * Example - `memoize` & `memorize`
 
-![Etymology of cognate](https://github.com/jhanink/clapi/blob/master/images/Etymological_Relationships_Tree.png?raw=true)
+![Etymology of cognate](https://github.com/jhanink/javascript-things/blob/master/images/Etymological_Relationships_Tree.png?raw=true)
 
