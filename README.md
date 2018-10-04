@@ -693,7 +693,7 @@ theArrow(); // -> 10, because the arrow function is innately bound to and thus a
    * Performs an efficient before/after diff (a.k.a __reconciliation__ in React)
       * Minimizes expensive DOM updates and thus reduces browser DOM reflow churn
    * Utilizes synthetic events to allow event listeners to run without incurring the cost of browser event propagation
-   * Conceptually similar to double-buffering in game programming 
+   * Conceptually similar to double-buffering in game programming
 
 ## `useful git projects`
 
@@ -706,8 +706,9 @@ theArrow(); // -> 10, because the arrow function is innately bound to and thus a
 * [postman commandline](https://github.com/postmanlabs/newman/)
 * [v8 optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
 
-## `helpful articles, videos, sites`
+## `helpful resources`
 
+* [30 seconds of code](https://github.com/30-seconds/30-seconds-of-code)
 * [10 Interview Questions Every Javascript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95#.24qhy21h7) - by Eric Elliott
 * [The javascript job market](https://medium.com/javascript-scene/forget-the-click-bait-here-s-what-the-javascript-job-market-really-looks-like-in-2016-ddfe0d39b467#.qayjac9w2)
 * [The es6 conundrum](http://www.sitepoint.com/the-es6-conundrum/)
