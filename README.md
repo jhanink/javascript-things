@@ -507,6 +507,7 @@ boy.getName(); // -> "Jack Jr."
       * if a call is queued, it may execute near the next scheduled call
       * it could be more or less than the specified delay
     * there will not be a "flurry" of calls
+  * http://2ality.com/2015/01/es6-destructuring.html
 
 ## `language core, internals`
 * __Execution context__
