@@ -493,9 +493,9 @@ boy.getName(); // -> "Jack Jr."
   * TBD
 * destructuring
   * Given: `var arr = [1,2,3];`
-  * Then - `var { el1, el2 } = arr;` is equivalent to `var el1=arr[0], el2=arr[1];`
+  * Then - `var [el1, el2] = arr;` is equivalent to `var el1=arr[0], el2=arr[1];`
   * Given: `var obj = {p:1, q:2, r:3};`
-  * Then - `var { p, q } = obj;` is equivalent to `var p=obj.p, q=obj.q;`
+  * Then - `var {p, q} = obj;` is equivalent to `var p=obj.p, q=obj.q;`
 * `setTimeout` vs `setInterval`
   * `setTimeout`
     * will be called after some specified delay
