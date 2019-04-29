@@ -408,6 +408,8 @@ babel-node code/functions.js
 * a traditional class is an abstract definition used to "instantiate" or "realize" a concrete object
 * an es6 class is syntactic sugar over the prototype model
 ```javascript
+
+// class declaration
 class Father {
   constructor(name) {
     this.name = name;
@@ -415,6 +417,11 @@ class Father {
   getName() {
     return this.name;
   }
+}
+
+// class expression
+const Father = class {
+  ...
 }
 
 class Son extends Father {
