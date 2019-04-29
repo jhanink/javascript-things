@@ -407,6 +407,7 @@ babel-node code/functions.js
 
 * a traditional class is an abstract definition used to "instantiate" or "realize" a concrete object
 * an es6 class is syntactic sugar over the prototype model
+* classes are not hoisted (whereas functions are)
 ```javascript
 
 // class declaration
