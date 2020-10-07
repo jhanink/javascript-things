@@ -667,6 +667,10 @@ theArrow(); // -> 10, because the arrow function is innately bound to and thus a
   * but `a` is not __configurable__ - i.e. does not allow `delete` from the global object
   * [See this jsbin](http://jsbin.com/zazuzi/edit?js,console)
 
+## `other`
+* *web events*
+  * [standard native events](https://developer.mozilla.org/en-US/docs/Web/Events)
+
 ## `js concepts`
 * *vm turn*
    * one cycle through the js event loop
